@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const categoriesIcons = (value) => {
     let name = '';
     switch(value){
         case 'All':
-            name = 'circle-o-notch';
+            name = 'crystal-ball';
             break;
-        case 'Sports':
-            name = 'soccer-ball-o'
+        case 'Startup':
+            name = 'kickstarter'
             break;
-        case 'Music':
-            name = 'music'
-            break;
-        case 'Clothing':
-            name = 'shopping-bag'
+        case 'Software':
+            name = 'wifi-strength-4'
             break;
         case 'Electronics':
-            name = 'tv'
+            name = 'robot-industrial'
+            break;
+        case 'Conference':
+            name = 'gesture-double-tap'
+            break;
+        case 'Social':
+            name = 'mastodon-variant'
+            break;
+        case 'Charity':
+            name = 'egg-easter'
             break;
         default:
             name = ''
@@ -27,7 +33,6 @@ const categoriesIcons = (value) => {
 
     return name;
 }
-
 
 class HorizontalScrollIcons extends Component {
 

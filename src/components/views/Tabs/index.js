@@ -1,8 +1,6 @@
 import { Navigation } from 'react-native-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import FalseIcon from '../../../assets/images/circle.png';
-
 const navStyle = {
     navBarTextFontSize:20,
     navBarTextColor:'#ffffff',
