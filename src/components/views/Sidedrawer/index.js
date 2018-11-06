@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import Icon from 'react-native-vector-icons/Zocial';
 
 import { connect } from 'react-redux';
 
@@ -27,7 +26,7 @@ class SidedrawerComponent extends Component {
             },
             {
                 value: "My posts",
-                iconName: "posterous",
+                iconName: "th-list",
                 shouldGoto: "eventsDengun.UserPosts",
                 typeLink: "view",
                 index: null,
