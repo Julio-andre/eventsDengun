@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "eslint.enable": false,
+    "git.ignoreLimitWarning": true
+}
