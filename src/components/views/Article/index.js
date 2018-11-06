@@ -33,6 +33,9 @@ const Article= (props) => {
             <Text style={styles.articleDescription}>
                 {props.ArticleData.description}
             </Text>
+            <Text style={styles.articleDescription}>
+                {props.ArticleData.location}
+            </Text>
         </View>
     )
 

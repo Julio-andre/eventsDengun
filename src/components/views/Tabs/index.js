@@ -23,8 +23,8 @@ const navLeftButton = (sources) => {
 const LoadTabs = (allow) => {
     Promise.all([
         Icon.getImageSource('bars',20,'white'),
-        Icon.getImageSource('dollar',20,'white'),
-        Icon.getImageSource('search',20,'white')
+        Icon.getImageSource('connectdevelop',20,'white'),
+        Icon.getImageSource('home',20,'white')
     ]).then( sources => {
         Navigation.startTabBasedApp({
             tabs:[

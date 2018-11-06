@@ -36,7 +36,7 @@ class AddPost extends Component {
           name:"category",
           valid:false,
           type:"picker",
-          options:['Select a category','Sports','Music','Clothing','Electronics'],
+          options:['Startup','Software','Electronics','Conference','Social','Charity'],
           rules:{
             isRequired:true
           },
@@ -60,9 +60,20 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:200
+            maxLength:40
           },
-          errorMsg: "You need to enter a description, max of 200 char"
+          errorMsg: "You need to enter a description, max of 40 char"
+        },
+        location:{
+          value:"",
+          name:"location",
+          valid:false,
+          type:"textinput",
+          rules:{
+            isRequired:true,
+            maxLength:10
+          },
+          errorMsg: "You need to enter a location, you only have 10 characters"
         },
         price:{
           value:"",
@@ -75,6 +86,7 @@ class AddPost extends Component {
           },
           errorMsg: "You need to enter a price, max of 6"
         },
+        
         email:{
           value:"",
           name:"email",
@@ -245,7 +257,19 @@ class AddPost extends Component {
                   value={this.state.form.description.value}
                   onChangeText={ value => this.updateInput("description",value)}
                   multiline={true}
-                  numberOfLines={4}
+                  numberOfLines={3}
+                  overrideStyle={styles.inputTextMultiline}
+              />
+            </View>
+
+            <View>
+              <Input 
+                  placeholder="Enter the Location"
+                  type={this.state.form.location.type}
+                  value={this.state.form.location.value}
+                  onChangeText={ value => this.updateInput("location",value)}
+                  multiline={true}
+                  numberOfLines={2}
                   overrideStyle={styles.inputTextMultiline}
               />
             </View>

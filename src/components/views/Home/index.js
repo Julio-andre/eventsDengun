@@ -18,7 +18,7 @@ class Home extends Component {
     this.state = {
       isLoading:true,
       articles:[],
-      categories:['All','Sports','Music','Clothing','Electronics'],
+      categories:['All','Startup','Software','Electronics','Conference','Social','Charity'],
       categorySelected:"All"
     }
 

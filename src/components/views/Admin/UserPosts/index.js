@@ -81,6 +81,7 @@ class UserPosts extends Component {
                     </View>
                     <View style={styles.itemDescription}>
                         <Text>{item.description}</Text>
+                        <Text>{item.location}</Text>
                         <View style={{marginTop:10}}>
                             <Text style={styles.small}>PRICE: $ {item.price}</Text>
                             <Text style={styles.small}>CATEGORY: $ {item.category}</Text>
