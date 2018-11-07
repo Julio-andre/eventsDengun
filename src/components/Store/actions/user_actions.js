@@ -142,5 +142,4 @@ export const deleteUserpost = (POSTID, USERDATA) => {
         type:DELETE_USER_POST,
         payload: promise
     }
-
 }
