@@ -6,18 +6,21 @@ import ValidationRules from '../../utils/forms/validationRules';
 import LoadTabs from '../Tabs';
 
 import { connect } from 'react-redux';
-import { signUp, signIn } from '../../Store/actions/user_actions';
+import uuid from 'uuid';
+import * as firebase from 'firebase';
 import { bindActionCreators } from 'redux';
 
 import { setTokens } from '../../utils/misc';
 
-class LoginForm extends Component {
 
+class LoginForm extends Component {
     state = {
         type:'Login',
         action:'Login',
         actionMode:'Not a user, Register',
         hasErrors:false,
+        image:null,
+        uploading:false,
         form:{
             email:{
                 value:"",
@@ -106,6 +109,11 @@ class LoginForm extends Component {
             })
         }
     }
+
+    async componentDidMount() {
+        await Permissions.askAsync(Permissions.CAMERA_ROLL);
+        await Permissions.askAsync(Permissions.CAMERA);
+      }
 
     submitUser = () => {
         let isFormValid = true;

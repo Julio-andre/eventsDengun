@@ -9,6 +9,9 @@ import RNFetchBlob from 'react-native-fetch-blob';
 
 export const FIREBASEURL = `https://eventsdengun.firebaseio.com`;
 export const APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`;
+export const authDomain: `eventsdengun.firebaseio.com`;
+export const storageBucket: `eventsdengun.appspot.com`;
+export const messagingSenderId: `119427405309`;
 export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
 export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
 export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
