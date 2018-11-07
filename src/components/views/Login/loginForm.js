@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 import Input from '../../utils/forms/inputs';
 import ValidationRules from '../../utils/forms/validationRules';
@@ -151,6 +151,7 @@ class LoginForm extends Component {
     }
 
     render(){
+        let { image } = this.state;
         return(
             <View style={styles.formInputContainer}>
                
@@ -244,7 +245,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({signUp,signIn},dispatch)
+    return bindActionCreators({firebase},dispatch)
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(LoginForm)

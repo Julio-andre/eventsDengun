@@ -45,6 +45,10 @@ class Home extends Component {
     })
 
   }
+  async componentDidMount(){
+    await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    await Permissions.askAsync(Permissions.CAMERA);
+  }
 
   componentDidMount(){
     this.props.getArticles('All').then(()=>{
@@ -87,6 +91,7 @@ class Home extends Component {
   )
 
   render() {
+    let { image } = this.state
     return (
         <ScrollView>
           <View style={styles.container}>

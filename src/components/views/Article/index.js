@@ -20,7 +20,7 @@ const Article= (props) => {
                 source={{uri:'https://loremflickr.com/400/400/girl,brazil,dog'}}
             />
             <Text style={styles.priceTag}>
-                $ {props.ArticleData.price}
+                € {props.ArticleData.price}
             </Text>
         </View>
     )
