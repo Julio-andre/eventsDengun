@@ -1,19 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-20:12
 MERGED from [:react-native-vector-icons] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:2:1-15:12
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-47:12
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:2:1-15:12
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/3cc2ca48ccda208dc93d594642d7928c/AndroidManifest.xml:2:1-14:12
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/dengun/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/4ed0c5b86444d0d26882d95997d19375/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:design:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/3d3fe55bfe0fc859dd55c4f1e8763f41/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29ed62732b94d290b3b0b59312843d12/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/8c1d1eac0cc4a7b9dafc6ce13a374c10/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:15:1-26:12
+MERGED from [com.facebook.fresco:fresco:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-0.8.1.aar/5520015a7d5580475c8651a5cde30ec9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp-0.8.1.aar/5e1c6ed8f1a1a14eeb5ad37582be9363/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-0.8.1.aar/33813329d151b5cb7c1ed90134d05058/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-0.8.1.aar/fb2e8e946ca3ef111d3b9c4446b18845/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:17:1-34:12
 MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/d845dfbb83bc5919b1b569f67ba9b537/AndroidManifest.xml:17:1-25:12
@@ -27,49 +32,45 @@ MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dengun/.g
 MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/9c26d4ca2b06d5b8af038501bd0db82c/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/069d5173faf123f735e603a72c1bf7c4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a3c60ef2cfc70ddd602490c8d59f5ba8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/6d19945e46d076b6c950098334436a6b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6cd23bc3c50db5c6517fb231a20f2226/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/35cf2de9567837c52c06f51c6e73e25d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6e154a2952855ebea237ad605fbf85bd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/df9d2db809fa5505c9547ce4fae8a79a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f0b55b52d8b0fcf960cef40f92701d6f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4e087d1a5bc37f66243f7ce8ce429900/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d6394a1130a1f20920d21cb665f5ca95/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2ebc261b67c4c8e8999a7a272c0ebeb7/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/0711bbba2dcf7960690c3201ab305472/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/db38488b3c7510394d41722eb496f913/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/22805c95c5e1fe1a932f6fa38db59e38/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/bc836d9f091ab3947658eeffb768dd1f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/e88e7dd4fda9521c94eeb4f39a7b7f7e/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r174650] /Users/dengun/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e69e6ba739b0af65c072e8cb5ab728f9/AndroidManifest.xml:1:1-3:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/4094ba0661eda1d1fe7af5c31b3081ef/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/1ca103d8f2c02d297441d8470ee82962/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/9450624ca7960f2811c9c3b23e1202c7/AndroidManifest.xml:2:1-9:12
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.fresco:fbcore:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-0.8.1.aar/31ba4c86dd5e99edccc6bc84cda07bb0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/f4e9393a261f58712e42edce1f110aea/AndroidManifest.xml:2:1-9:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e777e6fe17783221aa3a1503e66f784f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:2:1-14:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce7e77130b840ead02e375d1dc42c788/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
-INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
 	package
 		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:2:5-31
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:5-67
 MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:22:5-67
@@ -82,40 +83,50 @@ MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/cach
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:4:22-64
-uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:11:5-78
-	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:5:22-75
-uses-permission#android.permission.CAMERA
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:6:5-64
-	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:6:22-62
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:7:5-70
-	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:7:22-68
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:8:5-80
-	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:9:5-80
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:5:5-81
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:33:5-81
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:9:22-78
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:7:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:8:5-64
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:8:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:9:5-70
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:12:5-88
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:12:22-85
 application
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:11:5-28:19
-MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-18:19
-MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-18:19
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:14:5-32:19
 MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:13:5-20
+MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-18:19
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:13:5-20
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/3cc2ca48ccda208dc93d594642d7928c/AndroidManifest.xml:12:5-20
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/3cc2ca48ccda208dc93d594642d7928c/AndroidManifest.xml:12:5-20
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/dengun/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/4ed0c5b86444d0d26882d95997d19375/AndroidManifest.xml:11:5-20
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/dengun/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/4ed0c5b86444d0d26882d95997d19375/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:29:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/8c1d1eac0cc4a7b9dafc6ce13a374c10/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/8c1d1eac0cc4a7b9dafc6ce13a374c10/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:26:5-32:19
@@ -144,76 +155,90 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/069d5173faf123f735e603a72c1bf7c4/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/e88e7dd4fda9521c94eeb4f39a7b7f7e/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/e88e7dd4fda9521c94eeb4f39a7b7f7e/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:26:5-20
 MERGED from [org.webkit:android-jsc:r174650] /Users/dengun/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e69e6ba739b0af65c072e8cb5ab728f9/AndroidManifest.xml:2:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/dengun/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e69e6ba739b0af65c072e8cb5ab728f9/AndroidManifest.xml:2:3-17
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:12:5-20
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:12:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/f4e9393a261f58712e42edce1f110aea/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/f4e9393a261f58712e42edce1f110aea/AndroidManifest.xml:7:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:12:5-20
 	android:label
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:13:7-39
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:16:7-39
 	android:icon
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:14:7-41
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:17:7-41
 	android:allowBackup
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:15:7-34
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:18:7-34
 	android:theme
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:16:7-38
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:19:7-38
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:15:7-38
 activity#com.eventsdengun.MainActivity
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:17:7-26:18
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:20:7-30:18
 	android:label
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:22:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:21:9-51
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:24:9-51
 	android:configChanges
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:20:9-79
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:23:9-79
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:18:9-37
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:22:9-25:25
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:21:9-37
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:25:9-29:25
 action#android.intent.action.MAIN
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:23:13-65
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:26:13-65
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:23:21-62
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:26:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:24:13-73
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:27:13-73
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:24:23-70
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:27:23-70
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:28:13-77
+	android:name
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:28:21-75
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:27:7-84
+ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:31:7-84
 MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:9-17:40
 MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:27:17-81
+		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:31:17-81
 uses-sdk
 INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.57.1.aar/7d9879b4ec3e08a83baa123f841677f6/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.20.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/react-native-0.20.1.aar/ae37bf40af6078b4da6594166159221f/AndroidManifest.xml:7:5-9:41
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/3cc2ca48ccda208dc93d594642d7928c/AndroidManifest.xml:8:5-10:41
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/3cc2ca48ccda208dc93d594642d7928c/AndroidManifest.xml:8:5-10:41
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/dengun/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/4ed0c5b86444d0d26882d95997d19375/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/dengun/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/4ed0c5b86444d0d26882d95997d19375/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/3d3fe55bfe0fc859dd55c4f1e8763f41/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/3d3fe55bfe0fc859dd55c4f1e8763f41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29ed62732b94d290b3b0b59312843d12/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29ed62732b94d290b3b0b59312843d12/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/8c1d1eac0cc4a7b9dafc6ce13a374c10/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/8c1d1eac0cc4a7b9dafc6ce13a374c10/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:19:5-21:41
+MERGED from [com.facebook.fresco:fresco:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-0.8.1.aar/5520015a7d5580475c8651a5cde30ec9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-0.8.1.aar/5520015a7d5580475c8651a5cde30ec9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp-0.8.1.aar/5e1c6ed8f1a1a14eeb5ad37582be9363/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp-0.8.1.aar/5e1c6ed8f1a1a14eeb5ad37582be9363/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-0.8.1.aar/33813329d151b5cb7c1ed90134d05058/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-0.8.1.aar/33813329d151b5cb7c1ed90134d05058/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-0.8.1.aar/fb2e8e946ca3ef111d3b9c4446b18845/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-0.8.1.aar/fb2e8e946ca3ef111d3b9c4446b18845/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:20:5-44
@@ -240,18 +265,18 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/069d5173faf123f735e603a72c1bf7c4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a3c60ef2cfc70ddd602490c8d59f5ba8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a3c60ef2cfc70ddd602490c8d59f5ba8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/6d19945e46d076b6c950098334436a6b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/6d19945e46d076b6c950098334436a6b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6cd23bc3c50db5c6517fb231a20f2226/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/6cd23bc3c50db5c6517fb231a20f2226/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/35cf2de9567837c52c06f51c6e73e25d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/35cf2de9567837c52c06f51c6e73e25d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6e154a2952855ebea237ad605fbf85bd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/6e154a2952855ebea237ad605fbf85bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad1e669793f4e92089e3d4444e436cc6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/df9d2db809fa5505c9547ce4fae8a79a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/df9d2db809fa5505c9547ce4fae8a79a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/f0b55b52d8b0fcf960cef40f92701d6f/AndroidManifest.xml:20:5-44
@@ -260,34 +285,24 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dengun/.
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4e087d1a5bc37f66243f7ce8ce429900/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d6394a1130a1f20920d21cb665f5ca95/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d6394a1130a1f20920d21cb665f5ca95/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2ebc261b67c4c8e8999a7a272c0ebeb7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2ebc261b67c4c8e8999a7a272c0ebeb7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/0711bbba2dcf7960690c3201ab305472/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/0711bbba2dcf7960690c3201ab305472/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/db38488b3c7510394d41722eb496f913/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/db38488b3c7510394d41722eb496f913/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/22805c95c5e1fe1a932f6fa38db59e38/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/22805c95c5e1fe1a932f6fa38db59e38/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/bc836d9f091ab3947658eeffb768dd1f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/bc836d9f091ab3947658eeffb768dd1f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/e88e7dd4fda9521c94eeb4f39a7b7f7e/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/e88e7dd4fda9521c94eeb4f39a7b7f7e/AndroidManifest.xml:7:5-9:41
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/4094ba0661eda1d1fe7af5c31b3081ef/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/4094ba0661eda1d1fe7af5c31b3081ef/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/1ca103d8f2c02d297441d8470ee82962/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/1ca103d8f2c02d297441d8470ee82962/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/9450624ca7960f2811c9c3b23e1202c7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/9450624ca7960f2811c9c3b23e1202c7/AndroidManifest.xml:5:5-7:41
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:8:5-10:41
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-0.8.1.aar/31ba4c86dd5e99edccc6bc84cda07bb0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.8.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/fbcore-0.8.1.aar/31ba4c86dd5e99edccc6bc84cda07bb0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/f4e9393a261f58712e42edce1f110aea/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/f4e9393a261f58712e42edce1f110aea/AndroidManifest.xml:5:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e777e6fe17783221aa3a1503e66f784f/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e777e6fe17783221aa3a1503e66f784f/AndroidManifest.xml:20:5-44
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/8c6a22562f10f4a34e0b5c4014dad7b1/AndroidManifest.xml:8:5-10:41
 MERGED from [android.arch.core:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce7e77130b840ead02e375d1dc42c788/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] /Users/dengun/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ce7e77130b840ead02e375d1dc42c788/AndroidManifest.xml:20:5-44
 INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
@@ -296,13 +311,7 @@ INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/mai
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml
-activity#com.reactnativenavigation.controllers.NavigationActivity
-ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:12:9-14:86
-	android:configChanges
-		ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:13-83
-	android:name
-		ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:13-84
-provider#android.support.v4.content.FileProvider
+provider#com.imagepicker.FileProvider
 ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
 		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:16:13-47
@@ -311,27 +320,27 @@ ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/events
 	android:exported
 		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:13-67
+		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:17:13-19:58
 	android:resource
 		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:19:17-55
 	android:name
 		ADDED from [:react-native-image-picker] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:18:17-67
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/cfc5dd40d1c5182f0f2f8a634c6181a0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/cfc5dd40d1c5182f0f2f8a634c6181a0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:22:5-79
+activity#com.reactnativenavigation.controllers.NavigationActivity
+ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:12:9-14:86
+	android:configChanges
+		ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:13-83
 	android:name
-		ADDED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:23:22-76
+		ADDED from [:react-native-navigation] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-navigation/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:13-84
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:12:22-70
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:24:5-68
+ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:21:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:25:5-68
 MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:25:5-68
 MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/cfc5dd40d1c5182f0f2f8a634c6181a0/AndroidManifest.xml:25:5-68
@@ -339,7 +348,43 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:24:22-65
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:27:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/10eb1a585e7d397d8cc1808ae9ed2f98/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/5939a2ec90a131a66f3a683401506caf/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/cfc5dd40d1c5182f0f2f8a634c6181a0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/cfc5dd40d1c5182f0f2f8a634c6181a0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:30:22-73
+provider#android.support.v4.content.FileProvider
+ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/dengun/Documents/react-pro/eventsDengun/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:37:13-67
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/bd25fd1e0a4a70f23c401d6a5775c985/AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/c8aea6ff9ae492b5fe891c3424029671/AndroidManifest.xml:26:9-47
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/26dd6a8ec753231eb68d077f20d7a9ff/AndroidManifest.xml:27:9-31:19
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dengun/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/153a2ed0faf648bd0eb3ecebd3bce6bb/AndroidManifest.xml:29:9-35:19
@@ -467,4 +512,4 @@ ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/dengun/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/852dc81dc3bf1346619aa547ae9bec3c/AndroidManifest.xml:24:13-58
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/dengun/Documents/react-pro/eventsDengun/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

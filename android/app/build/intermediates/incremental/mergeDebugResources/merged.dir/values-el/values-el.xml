@@ -17,6 +17,14 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Κοινή χρήση με"</string>
     <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"Κοινή χρήση με <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Σύμπτυξη"</string>
+    <string name="catalyst_debugjs">Debug JS</string>
+    <string name="catalyst_element_inspector">Εξέταση στοιχείου</string>
+    <string name="catalyst_jsload_error">Unable to download JS bundle</string>
+    <string name="catalyst_jsload_message">Fetching JS bundle</string>
+    <string name="catalyst_jsload_title">Περιμένετε...</string>
+    <string name="catalyst_reloadjs">Reload JS</string>
+    <string name="catalyst_settings">Dev Settings</string>
+    <string name="catalyst_settings_title">Catalyst Dev Settings</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ενεργοποίηση"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ενεργοποίηση υπηρεσιών Google Play"</string>

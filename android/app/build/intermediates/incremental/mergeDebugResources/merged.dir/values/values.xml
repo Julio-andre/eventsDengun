@@ -53,6 +53,8 @@
     <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
     <color name="design_snackbar_background_color">#323232</color>
+    <color name="design_textinput_error_color_dark">#FFFF6E6E</color>
+    <color name="design_textinput_error_color_light">#FFD50000</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -120,7 +122,7 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/><attr format="dimension" name="buttonIconDimen"/></declare-styleable>
-    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/><attr name="android:keyboardNavigationCluster"/><attr name="android:touchscreenBlocksFocus"/></declare-styleable>
+    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/></declare-styleable>
     <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/></declare-styleable>
     <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
             
@@ -311,7 +313,7 @@
             
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
-    <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="reference|color" name="textColorError"/></declare-styleable>
+    <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
@@ -320,7 +322,7 @@
             <enum name="normal" value="0"/>
             
             <enum name="mini" value="1"/>
-        </attr><attr format="dimension" name="fabCustomSize"/><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
+        </attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
     <declare-styleable name="FloatingActionButton_Behavior_Layout"><attr format="boolean" name="behavior_autoHide"/></declare-styleable>
     <declare-styleable name="FontFamily"><attr format="string" name="fontProviderAuthority"/><attr format="string" name="fontProviderPackage"/><attr format="string" name="fontProviderQuery"/><attr format="reference" name="fontProviderCerts"/><attr name="fontProviderFetchStrategy">
             
@@ -336,62 +338,7 @@
             <enum name="italic" value="1"/>
         </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/><attr name="android:fontStyle"/><attr name="android:font"/><attr name="android:fontWeight"/></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
-    <declare-styleable name="GenericDraweeHierarchy"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType">
-      <enum name="none" value="-1"/>
-      <enum name="fitXY" value="0"/>
-      <enum name="fitStart" value="1"/>
-      <enum name="fitCenter" value="2"/>
-      <enum name="fitEnd" value="3"/>
-      <enum name="center" value="4"/>
-      <enum name="centerInside" value="5"/>
-      <enum name="centerCrop" value="6"/>
-      <enum name="focusCrop" value="7"/>
-      <enum name="fitBottomStart" value="8"/>
-    </attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType">
-      <enum name="none" value="-1"/>
-      <enum name="fitXY" value="0"/>
-      <enum name="fitStart" value="1"/>
-      <enum name="fitCenter" value="2"/>
-      <enum name="fitEnd" value="3"/>
-      <enum name="center" value="4"/>
-      <enum name="centerInside" value="5"/>
-      <enum name="centerCrop" value="6"/>
-      <enum name="focusCrop" value="7"/>
-      <enum name="fitBottomStart" value="8"/>
-    </attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType">
-      <enum name="none" value="-1"/>
-      <enum name="fitXY" value="0"/>
-      <enum name="fitStart" value="1"/>
-      <enum name="fitCenter" value="2"/>
-      <enum name="fitEnd" value="3"/>
-      <enum name="center" value="4"/>
-      <enum name="centerInside" value="5"/>
-      <enum name="centerCrop" value="6"/>
-      <enum name="focusCrop" value="7"/>
-      <enum name="fitBottomStart" value="8"/>
-    </attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType">
-      <enum name="none" value="-1"/>
-      <enum name="fitXY" value="0"/>
-      <enum name="fitStart" value="1"/>
-      <enum name="fitCenter" value="2"/>
-      <enum name="fitEnd" value="3"/>
-      <enum name="center" value="4"/>
-      <enum name="centerInside" value="5"/>
-      <enum name="centerCrop" value="6"/>
-      <enum name="focusCrop" value="7"/>
-      <enum name="fitBottomStart" value="8"/>
-    </attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType">
-      <enum name="none" value="-1"/>
-      <enum name="fitXY" value="0"/>
-      <enum name="fitStart" value="1"/>
-      <enum name="fitCenter" value="2"/>
-      <enum name="fitEnd" value="3"/>
-      <enum name="center" value="4"/>
-      <enum name="centerInside" value="5"/>
-      <enum name="centerCrop" value="6"/>
-      <enum name="focusCrop" value="7"/>
-      <enum name="fitBottomStart" value="8"/>
-    </attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="boolean" name="roundTopStart"/><attr format="boolean" name="roundTopEnd"/><attr format="boolean" name="roundBottomStart"/><attr format="boolean" name="roundBottomEnd"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/><attr format="dimension" name="roundingBorderPadding"/></declare-styleable>
+    <declare-styleable name="GenericDraweeView"><attr format="integer" name="fadeDuration"/><attr format="float" name="viewAspectRatio"/><attr format="reference" name="placeholderImage"/><attr name="placeholderImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="retryImage"/><attr name="retryImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="failureImage"/><attr name="failureImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="progressBarImage"/><attr name="progressBarImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="integer" name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"><enum name="none" value="-1"/><enum name="fitXY" value="0"/><enum name="fitStart" value="1"/><enum name="fitCenter" value="2"/><enum name="fitEnd" value="3"/><enum name="center" value="4"/><enum name="centerInside" value="5"/><enum name="centerCrop" value="6"/><enum name="focusCrop" value="7"/></attr><attr format="reference" name="backgroundImage"/><attr format="reference" name="overlayImage"/><attr format="reference" name="pressedStateOverlayImage"/><attr format="boolean" name="roundAsCircle"/><attr format="dimension" name="roundedCornerRadius"/><attr format="boolean" name="roundTopLeft"/><attr format="boolean" name="roundTopRight"/><attr format="boolean" name="roundBottomRight"/><attr format="boolean" name="roundBottomLeft"/><attr format="color" name="roundWithOverlayColor"/><attr format="dimension" name="roundingBorderWidth"/><attr format="color" name="roundingBorderColor"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers">
             <flag name="none" value="0"/>
             <flag name="beginning" value="1"/>
@@ -482,7 +429,6 @@
 
 <attr format="reference|string" name="scopeUris"/>
 </declare-styleable>
-    <declare-styleable name="SimpleDraweeView"><attr format="string" name="actualImageUri"/><attr format="reference" name="actualImageResource"/><attr name="fadeDuration"/><attr name="viewAspectRatio"/><attr name="placeholderImage"/><attr name="placeholderImageScaleType"/><attr name="retryImage"/><attr name="retryImageScaleType"/><attr name="failureImage"/><attr name="failureImageScaleType"/><attr name="progressBarImage"/><attr name="progressBarImageScaleType"/><attr name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"/><attr name="backgroundImage"/><attr name="overlayImage"/><attr name="pressedStateOverlayImage"/><attr name="roundAsCircle"/><attr name="roundedCornerRadius"/><attr name="roundTopLeft"/><attr name="roundTopRight"/><attr name="roundBottomRight"/><attr name="roundBottomLeft"/><attr name="roundTopStart"/><attr name="roundTopEnd"/><attr name="roundBottomStart"/><attr name="roundBottomEnd"/><attr name="roundWithOverlayColor"/><attr name="roundingBorderWidth"/><attr name="roundingBorderColor"/><attr name="roundingBorderPadding"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="color" name="thumbTint"/><attr name="thumbTintMode">
@@ -746,26 +692,18 @@
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
-    <item name="accessibility_hint" type="id"/>
-    <item name="accessibility_role" type="id"/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="fragment_screen_content" type="id"/>
-    <item name="ghost_view" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
-    <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="react_root_view" type="id"/>
-    <item name="react_test_id" type="id"/>
-    <item name="save_image_matrix" type="id"/>
-    <item name="save_non_transition_alpha" type="id"/>
-    <item name="save_scale_type" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="text" type="id"/>
@@ -774,14 +712,9 @@
     <item name="textinput_error" type="id"/>
     <item name="title" type="id"/>
     <item name="transition_current_scene" type="id"/>
-    <item name="transition_layout_save" type="id"/>
-    <item name="transition_position" type="id"/>
     <item name="transition_scene_layoutid_cache" type="id"/>
-    <item name="transition_transform" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
-    <item name="view_tag_instance_handle" type="id"/>
-    <item name="view_tag_native_id" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
@@ -823,34 +756,29 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="adjustable_description" translatable="false">Adjustable</string>
     <string name="app_name">eventsDengun</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
-    <string name="catalyst_copy_button" project="catalyst" translatable="false">Copy</string>
-    <string name="catalyst_debugjs" project="catalyst" translatable="false">Debug JS Remotely</string>
-    <string name="catalyst_debugjs_nuclide" project="catalyst" translatable="false">Debug JS in Nuclide</string>
-    <string name="catalyst_debugjs_nuclide_failure" project="catalyst" translatable="false">The request to attach Nuclide could not reach Metro Bundler!</string>
-    <string name="catalyst_debugjs_off" project="catalyst" translatable="false">Stop Remote JS Debugging</string>
-    <string name="catalyst_dismiss_button" project="catalyst" translatable="false">Dismiss\n(ESC)</string>
-    <string name="catalyst_element_inspector" project="catalyst" translatable="false">Toggle Inspector</string>
-    <string name="catalyst_heap_capture" project="catalyst" translatable="false">Capture Heap</string>
-    <string name="catalyst_hot_module_replacement" project="catalyst" translatable="false">Enable Hot Reloading</string>
-    <string name="catalyst_hot_module_replacement_off" project="catalyst" translatable="false">Disable Hot Reloading</string>
-    <string name="catalyst_jsload_error" project="catalyst" translatable="false">Unable to download JS bundle. Did you forget to start the development server or connect your device?</string>
+    <string name="catalyst_debugjs" project="catalyst" translatable="false">Debug in Chrome</string>
+    <string name="catalyst_debugjs_off" project="catalyst" translatable="false">Stop Chrome Debugging</string>
+    <string name="catalyst_element_inspector" project="catalyst" translatable="false">Show Inspector</string>
+    <string name="catalyst_element_inspector_off" project="catalyst" translatable="false">Hide Inspector</string>
+    <string name="catalyst_hot_module_replacement" project="catalyst" translatable="false">Enable Hot Module Replacement</string>
+    <string name="catalyst_hot_module_replacement_off" project="catalyst" translatable="false">Disable Hot Module Replacement</string>
+    <string name="catalyst_jsload_error" project="catalyst" translatable="false">Unable to download JS bundle from the dev server.\n\nTry the following to fix the issue:\n• Ensure that the packager server is running\n• Ensure that your device/emulator is connected to your machine and has USB debugging enabled - run \'adb devices\' to see a list of connected devices\n• If you\'re on a physical device connected to the same machine, run \'adb reverse tcp:8081 tcp:8081\' to forward requests from your device\n• If your device is on the same Wi-Fi network, set \'Debug server host &amp; port for device\' in \'Dev settings\' to your machine\'s IP address and the port of the local dev server - e.g. 10.0.1.1:8081</string>
+    <string name="catalyst_jsload_message" project="catalyst" translatable="false">Fetching JS bundle</string>
+    <string name="catalyst_jsload_title" project="catalyst" translatable="false">Please wait…</string>
     <string name="catalyst_live_reload" project="catalyst" translatable="false">Enable Live Reload</string>
     <string name="catalyst_live_reload_off" project="catalyst" translatable="false">Disable Live Reload</string>
-    <string name="catalyst_loading_from_url" project="catalyst" translatable="false">Loading from %1$s…</string>
-    <string name="catalyst_perf_monitor" project="catalyst" translatable="false">Show Perf Monitor</string>
-    <string name="catalyst_perf_monitor_off" project="catalyst" translatable="false">Hide Perf Monitor</string>
-    <string name="catalyst_poke_sampling_profiler" project="catalyst" translatable="false">Start/Stop Sampling Profiler</string>
-    <string name="catalyst_reload_button" project="catalyst" translatable="false">Reload\n(R,\u00A0R)</string>
-    <string name="catalyst_reloadjs" project="catalyst" translatable="false">Reload</string>
+    <string name="catalyst_perf_monitor" project="catalyst" translatable="false">Enable Perf Monitor</string>
+    <string name="catalyst_perf_monitor_off" project="catalyst" translatable="false">Disable Perf Monitor</string>
+    <string name="catalyst_reloadjs" project="catalyst" translatable="false">Reload JS</string>
     <string name="catalyst_remotedbg_error" project="catalyst" translatable="false">Unable to connect with remote debugger</string>
     <string name="catalyst_remotedbg_message" project="catalyst" translatable="false">Connecting to remote debugger</string>
-    <string name="catalyst_report_button" project="catalyst" translatable="false">Report</string>
     <string name="catalyst_settings" project="catalyst" translatable="false">Dev Settings</string>
     <string name="catalyst_settings_title" project="catalyst" translatable="false">Catalyst Dev Settings</string>
+    <string name="catalyst_start_profile" project="catalyst" translatable="false">Start Profile</string>
+    <string name="catalyst_stop_profile" project="catalyst" translatable="false">Stop Profile</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -879,16 +807,12 @@
     <string name="google_app_id" translatable="false">1:119427405309:android:7a8c52aab2e49de5</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCujgSMChCSwF4_zXlwJn7SUkPL0h5fgCg</string>
     <string name="google_storage_bucket" translatable="false">eventsdengun.appspot.com</string>
-    <string name="image_button_description" translatable="false">Button, Image</string>
-    <string name="image_description" translatable="false">Image</string>
-    <string name="link_description" translatable="false">Link</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="project_id" translatable="false">eventsdengun</string>
-    <string name="search_description" translatable="false">Search Field</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -1228,9 +1152,6 @@
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">true</item>
-    </style>
-    <style name="Base.V14.Widget.Design.AppBarLayout" parent="android:Widget">
-        <item name="android:background">?attr/colorPrimary</item>
     </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
         <item name="viewInflaterClass">android.support.v7.app.AppCompatViewInflater</item>
@@ -1968,7 +1889,9 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <style name="Base.Widget.Design.AppBarLayout" parent="Base.V14.Widget.Design.AppBarLayout"/>
+    <style name="Base.Widget.Design.AppBarLayout" parent="android:Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
         <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
         <item name="tabIndicatorColor">?attr/colorAccent</item>
@@ -1979,18 +1902,6 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <style name="CalendarDatePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
-        <item name="android:datePickerStyle">@style/CalendarDatePickerStyle</item>
-    </style>
-    <style name="CalendarDatePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.DatePicker">
-        <item name="android:datePickerMode">calendar</item>
-    </style>
-    <style name="ClockTimePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
-      <item name="android:timePickerStyle">@style/ClockTimePickerStyle</item>
-    </style>
-    <style name="ClockTimePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.TimePicker">
-      <item name="android:timePickerMode">clock</item>
-    </style>
     <style name="DefaultExplainingPermissionsTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <!-- Used for the buttons -->
         <item name="colorAccent">#61c3e7</item>
@@ -1999,14 +1910,6 @@
         <!-- Used for the background -->
         <item name="android:background">@android:color/white</item>
     </style>
-    <style name="DialogAnimationFade">
-    <item name="android:windowEnterAnimation">@anim/catalyst_fade_in</item>
-    <item name="android:windowExitAnimation">@anim/catalyst_fade_out</item>
-  </style>
-    <style name="DialogAnimationSlide">
-    <item name="android:windowEnterAnimation">@anim/catalyst_slide_up</item>
-    <item name="android:windowExitAnimation">@anim/catalyst_slide_down</item>
-  </style>
     <style name="LightBox" parent="@android:style/Theme.Translucent.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/ModalDefaultAnimations</item>
         <item name="android:statusBarColor" ns2:targetApi="lollipop">@android:color/transparent</item>
@@ -2215,18 +2118,6 @@
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
-    <style name="SpinnerDatePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
-        <item name="android:datePickerStyle">@style/SpinnerDatePickerStyle</item>
-    </style>
-    <style name="SpinnerDatePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.DatePicker">
-        <item name="android:datePickerMode">spinner</item>
-    </style>
-    <style name="SpinnerTimePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
-      <item name="android:timePickerStyle">@style/SpinnerTimePickerStyle</item>
-    </style>
-    <style name="SpinnerTimePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.TimePicker">
-      <item name="android:timePickerMode">spinner</item>
-    </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -2358,7 +2249,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Catalyst"/>
-    <style name="Theme.Catalyst.RedBox">
+    <style name="Theme.Catalyst.RedBox" parent="@style/Theme.AppCompat.DialogWhenLarge">
     <item name="android:windowBackground">@color/catalyst_redbox_background</item>
     <item name="android:windowAnimationStyle">@style/Animation.Catalyst.RedBox</item>
     <item name="android:inAnimation">@android:anim/fade_in</item>
@@ -2366,8 +2257,7 @@
     <item name="android:textColor">@android:color/white</item>
   </style>
     <style name="Theme.Design" parent="Theme.AppCompat">
-        <item name="textColorError">?attr/colorError</item>
-        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+        <item name="textColorError">@color/design_textinput_error_color_dark</item>
     </style>
     <style name="Theme.Design.BottomSheetDialog" parent="Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -2375,8 +2265,7 @@
         <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
     </style>
     <style name="Theme.Design.Light" parent="Theme.AppCompat.Light">
-        <item name="textColorError">?attr/colorError</item>
-        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+        <item name="textColorError">@color/design_textinput_error_color_light</item>
     </style>
     <style name="Theme.Design.Light.BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -2391,19 +2280,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.FullScreenDialog">
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">false</item>
-    <item name="android:windowBackground">@android:color/transparent</item>
-    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-    <item name="android:statusBarColor">@android:color/transparent</item>
-  </style>
-    <style name="Theme.FullScreenDialogAnimatedFade" parent="Theme.FullScreenDialog">
-    <item name="android:windowAnimationStyle">@style/DialogAnimationFade</item>
-  </style>
-    <style name="Theme.FullScreenDialogAnimatedSlide" parent="Theme.FullScreenDialog">
-    <item name="android:windowAnimationStyle">@style/DialogAnimationSlide</item>
-  </style>
     <style name="Theme.ReactNative.AppCompat.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@android:color/black</item>
     </style>
@@ -2533,7 +2409,7 @@
         <item name="expandedTitleMargin">32dp</item>
         <item name="statusBarScrim">?attr/colorPrimaryDark</item>
     </style>
-    <style name="Widget.Design.CoordinatorLayout" parent="@style/Widget.Support.CoordinatorLayout">
+    <style name="Widget.Design.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">?attr/colorPrimaryDark</item>
     </style>
     <style name="Widget.Design.FloatingActionButton" parent="android:Widget">
@@ -2579,14 +2455,4 @@
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
-    <style name="redboxButton">
-    <item name="android:layout_width">0dp</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_weight">1</item>
-    <item name="android:layout_margin">4dp</item>
-    <item name="android:background">@null</item>
-    <item name="android:gravity">center</item>
-    <item name="android:textColor">#dddddd</item>
-    <item name="android:textSize">14sp</item>
-  </style>
 </resources>

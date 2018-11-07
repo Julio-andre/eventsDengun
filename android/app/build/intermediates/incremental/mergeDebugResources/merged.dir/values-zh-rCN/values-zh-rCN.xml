@@ -17,6 +17,14 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
     <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"使用<ns1:g id="APPLICATION_NAME">%s</ns1:g>分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <string name="catalyst_debugjs">Debug JS</string>
+    <string name="catalyst_element_inspector">检查元素</string>
+    <string name="catalyst_jsload_error">Unable to download JS bundle</string>
+    <string name="catalyst_jsload_message">Fetching JS bundle</string>
+    <string name="catalyst_jsload_title">请稍等...</string>
+    <string name="catalyst_reloadjs">Reload JS</string>
+    <string name="catalyst_settings">Dev Settings</string>
+    <string name="catalyst_settings_title">Catalyst Dev Settings</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"启用"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"您必须先启用 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"启用 Google Play 服务"</string>

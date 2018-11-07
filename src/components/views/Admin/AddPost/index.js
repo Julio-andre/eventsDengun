@@ -3,7 +3,9 @@ import { StyleSheet, Text, View, ScrollView, Image, Button, Modal } from 'react-
 import { 
   navigatorDrawer,
   getTokens,
-  setTokens
+  setTokens,
+  Blob,
+  fs
 } from '../../../utils/misc';
 
 import Input from '../../../utils/forms/inputs';
@@ -15,7 +17,6 @@ import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux'
 
 import ImagePicker from "react-native-image-picker";
-import RNFetchBlob from 'react-native-fetch-blob';
 import firebase from 'firebase';
 
 class AddPost extends Component {
@@ -230,13 +231,13 @@ class AddPost extends Component {
         title:'Select your Poster of the Event',
         mediaType:'mixed'
     },response => {
-      if(response.didCancel){
+      if(!response.didCancel){
+        uploadImage(response.uri)
+      } else if(response.didCancel){
         alert('cancel')
       } else if(response.error){
         alert('sorry not working')
       } else {
-        console.log('add image')
-        console.log(response)
         this.setState({
           poster:response.uri
         })
@@ -437,6 +438,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     padding:20
   },
+  posterStyle: {
+    height:180,
+    marginTop:16,
+
+  },
   mainTitle:{
     fontFamily: 'Roboto-Black',
     fontSize: 30,
@@ -480,15 +486,4 @@ function mapDispatchToProps(dispatch){
 } 
 
 export default connect(mapStateToProps,mapDispatchToProps)(AddPost)
-  },
-  posterStyle: {
-    height:180,
-    marginTop:16,
-
-  },
-  errorItem:{
-    width:'100%',
-    height:400,
-    fontFamily: 'Roboto-Black',
-    fontSize: 16,
-    marginBottom:10
+  
