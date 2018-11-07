@@ -115,10 +115,7 @@ navigationController:(UINavigationController*)navigationController
 
 -(BOOL)isTitleOnly
 {
-    BOOL hasNoImageData = [[NSNull null] isEqual:self.titleImageData] || self.titleImageData == nil;
-    return self.title != nil &&
-        self.subtitle == nil &&
-        hasNoImageData;
+    return self.title && !self.subtitle && !self.titleImageData;
 }
 
 

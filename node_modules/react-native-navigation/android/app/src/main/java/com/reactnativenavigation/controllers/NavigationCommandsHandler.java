@@ -247,7 +247,7 @@ public class NavigationCommandsHandler {
         });
     }
 
-    public static void dismissTopModal(final ScreenParams params, final Promise promise) {
+    public static void dismissTopModal(final ScreenParams params) {
         final NavigationActivity currentActivity = NavigationActivity.currentActivity;
         if (currentActivity == null) {
             return;
@@ -257,12 +257,11 @@ public class NavigationCommandsHandler {
             @Override
             public void run() {
                 currentActivity.dismissTopModal(params);
-                promise.resolve("true");
             }
         });
     }
 
-    public static void dismissAllModals(final Promise promise) {
+    public static void dismissAllModals() {
         final NavigationActivity currentActivity = NavigationActivity.currentActivity;
         if (currentActivity == null) {
             return;
@@ -272,7 +271,6 @@ public class NavigationCommandsHandler {
             @Override
             public void run() {
                 currentActivity.dismissAllModals();
-                promise.resolve("true");
             }
         });
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Button, Modal } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, Button, Modal } from 'react-native';
 import { 
   navigatorDrawer,
   getTokens,
@@ -13,6 +13,10 @@ import { connect } from 'react-redux';
 import { addArticle, resetArticle } from '../../../Store/actions/articles_actions';
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux'
+
+import ImagePicker from "react-native-image-picker";
+import RNFetchBlob from 'react-native-fetch-blob';
+import firebase from 'firebase';
 
 class AddPost extends Component {
   constructor(props){
@@ -30,6 +34,7 @@ class AddPost extends Component {
     modalVisible:false,
     modalSuccess:false,
     errorsArray:[],
+    poster:'',
     form:{
         category:{
           value:"",
@@ -211,7 +216,61 @@ class AddPost extends Component {
     this.props.resetArticle();
 
   }
+// Response Object: didCancel, error, customButton, data, uri, origURL,
+// isVertical, width, height, fileSize, type, fileName(android photos), path, latitude, 
+// longitude, timestamp, originalRotation
 
+//title, cancelButtonTitle, takePhotoButtonTitle, choseFromLibraryButtonTitle,
+//customButtons, cameratype, mediaType, maxWidth, maxHeight, quality,
+//videoQuality, durationLimit, rotation, allowsEditing, noData, storageOptions,
+//storageOptions.skipBackup, storageOptions.path, storageOptions.path,
+//storageOptions.cameraRoll
+    addPoster = () => {
+      ImagePicker.showImagePicker({
+        title:'Select your Poster of the Event',
+        mediaType:'mixed'
+    },response => {
+      if(response.didCancel){
+        alert('cancel')
+      } else if(response.error){
+        alert('sorry not working')
+      } else {
+        console.log('add image')
+        console.log(response)
+        this.setState({
+          poster:response.uri
+        })
+      }
+
+    })
+
+  }
+//  ImagePicker.showImagePicker(null,response => {
+//    if(response.didCancel){
+//      console.log('User cancelled image');
+//    } else if(response.error){
+//      console.log('Image Error: ', response.error);
+//    } else if(response.customButton) {
+//      console.log('User tapped custom button: ', response.customButton);
+//    } else {
+//      let source = { uri: response.uri };
+
+// Can also display the image using data:
+// let source = { uri: 'data:image/jpeg;base64,' + response.data };
+
+//      this.setState({
+//        avatarSource: source
+//      });
+//     }
+//   });
+
+
+  //Directly Launching the Camera
+  //ImagePicker.launchCamera{options, (response) => {
+    //same code as in above section!
+  //}}
+
+  // To RENDER <Image source={this.state.poster} style={styles.uploadposter} />
   render() {
     return (
         <ScrollView>
@@ -219,6 +278,18 @@ class AddPost extends Component {
 
             <View style={{flex:1,alignItems: 'center'}}>
               <Text style={styles.mainTitle}>Post your DenEvents</Text>
+            </View>
+
+            <View style={{width:'100%'}}>
+              <Image
+                resizeMode={"cover"} 
+                source={{uri:this.state.poster}}
+                style={styles.posterStyle}
+                />
+              <Button
+                title="Add your Poster"
+                onPress={()=>this.addPoster()}
+              />
             </View>
 
             <View style={{flexDirection: 'row',alignItems: 'center'}}>
@@ -409,3 +480,15 @@ function mapDispatchToProps(dispatch){
 } 
 
 export default connect(mapStateToProps,mapDispatchToProps)(AddPost)
+  },
+  posterStyle: {
+    height:180,
+    marginTop:16,
+
+  },
+  errorItem:{
+    width:'100%',
+    height:400,
+    fontFamily: 'Roboto-Black',
+    fontSize: 16,
+    marginBottom:10

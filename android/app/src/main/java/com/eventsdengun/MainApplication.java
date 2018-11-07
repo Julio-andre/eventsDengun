@@ -3,6 +3,10 @@ package com.eventsdengun;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.reactnativenavigation.NavigationReactPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationReactPackage;
 import com.facebook.react.ReactNativeHost;

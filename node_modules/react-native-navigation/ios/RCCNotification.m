@@ -119,7 +119,7 @@
     }
     
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(1, 1), YES, 0);
-    [self.reactView.contentView drawViewHierarchyInRect:CGRectMake(0, 0, 1, 1) afterScreenUpdates:NO];
+    [self.reactView.contentView drawViewHierarchyInRect:CGRectMake(0, 0, 1, 1) afterScreenUpdates:YES];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

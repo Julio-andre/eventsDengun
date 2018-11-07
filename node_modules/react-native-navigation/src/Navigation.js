@@ -119,8 +119,8 @@ function showLightBox(params = {}) {
   return platformSpecific.showLightBox(params);
 }
 
-function dismissLightBox() {
-  return platformSpecific.dismissLightBox();
+function dismissLightBox(params = {}) {
+  return platformSpecific.dismissLightBox(params);
 }
 
 function showInAppNotification(params = {}) {

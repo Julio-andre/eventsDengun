@@ -15,7 +15,6 @@ const NSInteger kLightBoxTag = 0x101010;
 @property (nonatomic, strong) UIView *overlayColorView;
 @property (nonatomic, strong) NSDictionary *params;
 @property (nonatomic)         BOOL yellowBoxRemoved;
-@property (nonatomic)         BOOL isDismissing;
 @end
 
 @implementation RCCLightBoxView
@@ -176,8 +175,6 @@ const NSInteger kLightBoxTag = 0x101010;
 
 -(void)dismissAnimated
 {
-    self.isDismissing = YES;
-    
     BOOL hasOverlayViews = (self.visualEffectView != nil || self.overlayColorView != nil);
     
     [UIView animateWithDuration:0.2 animations:^()
@@ -221,8 +218,7 @@ const NSInteger kLightBoxTag = 0x101010;
 +(void)showWithParams:(NSDictionary*)params
 {
     UIViewController *viewController = RCTPresentedViewController();
-    RCCLightBoxView *previousLightBox = [viewController.view viewWithTag:kLightBoxTag];
-    if (previousLightBox != nil && !previousLightBox.isDismissing)
+    if ([viewController.view viewWithTag:kLightBoxTag] != nil)
     {
         return;
     }

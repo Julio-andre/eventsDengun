@@ -6,9 +6,8 @@ target 'eventsDengun' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
 
-
-
-
+  pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
 
 end

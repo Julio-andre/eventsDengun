@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "119427405309",
+    "firebase_url": "https://eventsdengun.firebaseio.com",
+    "project_id": "eventsdengun",
+    "storage_bucket": "eventsdengun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119427405309:android:7a8c52aab2e49de5",
+        "android_client_info": {
+          "package_name": "com.eventsdengun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119427405309-hqn6vavd2ugmg2ss95c6djjf48hgcf53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCujgSMChCSwF4_zXlwJn7SUkPL0h5fgCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

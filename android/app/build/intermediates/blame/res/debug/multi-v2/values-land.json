@@ -4,7 +4,7 @@
             "outputFile": "/Users/dengun/Documents/react-pro/eventsDengun/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/48df1c14ea088bc1f01dc47b53be0874/res/values-land/values-land.xml",
+                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29ed62732b94d290b3b0b59312843d12/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2c02416cbb014ee2001d79ff18b3b39e/res/values-land/values-land.xml",
+                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/3d3fe55bfe0fc859dd55c4f1e8763f41/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

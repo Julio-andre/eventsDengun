@@ -36,6 +36,14 @@
     <color name="colorBottomNavigationPrimary">#3F51B5</color>
     <color name="colorBottomNavigationPrimaryDark">#303F9F</color>
     <color name="colorBottomNavigationSelectedBackground">#17000000</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -392,6 +400,19 @@
         </attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr>
+
+<attr format="float" name="imageAspectRatio"/>
+
+<attr format="boolean" name="circleCrop"/>
+</declare-styleable>
     <declare-styleable name="MaterialMenuView"><attr format="color" name="mm_color"/><attr format="boolean" name="mm_visible"/><attr format="integer" name="mm_scale"/><attr format="integer" name="mm_transformDuration"/><attr format="integer" name="mm_strokeWidth"/><attr format="boolean" name="mm_rtlEnabled"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="alphabeticModifiers">
@@ -442,6 +463,25 @@
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
+    <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr>
+<attr format="reference" name="colorScheme">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr>
+
+<attr format="reference|string" name="scopeUris"/>
+</declare-styleable>
     <declare-styleable name="SimpleDraweeView"><attr format="string" name="actualImageUri"/><attr format="reference" name="actualImageResource"/><attr name="fadeDuration"/><attr name="viewAspectRatio"/><attr name="placeholderImage"/><attr name="placeholderImageScaleType"/><attr name="retryImage"/><attr name="retryImageScaleType"/><attr name="failureImage"/><attr name="failureImageScaleType"/><attr name="progressBarImage"/><attr name="progressBarImageScaleType"/><attr name="progressBarAutoRotateInterval"/><attr name="actualImageScaleType"/><attr name="backgroundImage"/><attr name="overlayImage"/><attr name="pressedStateOverlayImage"/><attr name="roundAsCircle"/><attr name="roundedCornerRadius"/><attr name="roundTopLeft"/><attr name="roundTopRight"/><attr name="roundBottomRight"/><attr name="roundBottomLeft"/><attr name="roundTopStart"/><attr name="roundTopEnd"/><attr name="roundBottomStart"/><attr name="roundBottomEnd"/><attr name="roundWithOverlayColor"/><attr name="roundingBorderWidth"/><attr name="roundingBorderColor"/><attr name="roundingBorderPadding"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
@@ -750,6 +790,7 @@
     <integer name="config_activityDefaultDur">250</integer>
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
@@ -811,8 +852,33 @@
     <string name="catalyst_settings" project="catalyst" translatable="false">Dev Settings</string>
     <string name="catalyst_settings_title" project="catalyst" translatable="false">Catalyst Dev Settings</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your device.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are not supported by your device.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">119427405309-hqn6vavd2ugmg2ss95c6djjf48hgcf53.apps.googleusercontent.com</string>
     <string name="drawer_close">Drawer Close</string>
     <string name="drawer_open">Drawer Open</string>
+    <string name="firebase_database_url" translatable="false">https://eventsdengun.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">119427405309</string>
+    <string name="google_api_key" translatable="false">AIzaSyCujgSMChCSwF4_zXlwJn7SUkPL0h5fgCg</string>
+    <string name="google_app_id" translatable="false">1:119427405309:android:7a8c52aab2e49de5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCujgSMChCSwF4_zXlwJn7SUkPL0h5fgCg</string>
+    <string name="google_storage_bucket" translatable="false">eventsdengun.appspot.com</string>
     <string name="image_button_description" translatable="false">Button, Image</string>
     <string name="image_description" translatable="false">Image</string>
     <string name="link_description" translatable="false">Link</string>
@@ -821,6 +887,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="project_id" translatable="false">eventsdengun</string>
     <string name="search_description" translatable="false">Search Field</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -1923,6 +1990,14 @@
     </style>
     <style name="ClockTimePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.TimePicker">
       <item name="android:timePickerMode">clock</item>
+    </style>
+    <style name="DefaultExplainingPermissionsTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#61c3e7</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#3d3d3d</item>
+        <!-- Used for the background -->
+        <item name="android:background">@android:color/white</item>
     </style>
     <style name="DialogAnimationFade">
     <item name="android:windowEnterAnimation">@anim/catalyst_fade_in</item>

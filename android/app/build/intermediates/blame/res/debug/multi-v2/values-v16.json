@@ -4,7 +4,17 @@
             "outputFile": "/Users/dengun/Documents/react-pro/eventsDengun/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/48df1c14ea088bc1f01dc47b53be0874/res/values-v16/values-v16.xml",
+                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d6394a1130a1f20920d21cb665f5ca95/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29ed62732b94d290b3b0b59312843d12/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/dengun/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/466b624bf1403b3b2bb20761aceddd9c/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

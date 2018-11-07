@@ -41,7 +41,6 @@ public class NavigationReactGateway implements ReactGateway {
 		return host.hasInstance() && getReactInstanceManager().getCurrentReactContext() != null;
 	}
 
-
 	@Override
 	public boolean hasStartedCreatingContext() {
 		return getReactInstanceManager().hasStartedCreatingInitialContext();
@@ -65,18 +64,18 @@ public class NavigationReactGateway implements ReactGateway {
 	}
 
 	public void onDestroyApp(Activity activity) {
-        if (NavigationApplication.instance.clearHostOnActivityDestroy(activity)) {
+        if (NavigationApplication.instance.clearHostOnActivityDestroy()) {
             getReactInstanceManager().onHostDestroy();
         } else if (hasStartedCreatingContext() && isInitialized()) {
             getReactInstanceManager().onHostDestroy(activity);
         }
-        if (NavigationApplication.instance.clearHostOnActivityDestroy(activity)) {
+        if (NavigationApplication.instance.clearHostOnActivityDestroy()) {
             host.clear();
         }
     }
 
 	public void onPauseActivity(Activity activity) {
-        if (NavigationApplication.instance.clearHostOnActivityDestroy(activity)) {
+        if (NavigationApplication.instance.clearHostOnActivityDestroy()) {
             getReactInstanceManager().onHostPause();
         } else if (hasStartedCreatingContext() && isInitialized()) {
 		    getReactInstanceManager().onHostPause(activity);
@@ -106,22 +105,20 @@ public class NavigationReactGateway implements ReactGateway {
 		}
 	}
 
-
 	public ReactNativeHost getReactNativeHost() {
 		return host;
 	}
 
 	//TODO temp hack
-	private void onReactContextInitialized(ReactContext context) {
-		reactEventEmitter = new NavigationReactEventEmitter(context);
+	private void onReactContextInitialized() {
+		reactEventEmitter = new NavigationReactEventEmitter(getReactContext());
 	}
 
-	public static class ReactNativeHostImpl extends ReactNativeHost implements ReactInstanceManager.ReactInstanceEventListener {
+	private static class ReactNativeHostImpl extends ReactNativeHost implements ReactInstanceManager.ReactInstanceEventListener {
 
-		public ReactNativeHostImpl() {
+		ReactNativeHostImpl() {
 			super(NavigationApplication.instance);
 		}
-
 
 		@Override
 		public boolean getUseDeveloperSupport() {
@@ -174,7 +171,7 @@ public class NavigationReactGateway implements ReactGateway {
 
 		@Override
 		public void onReactContextInitialized(ReactContext context) {
-			((NavigationReactGateway) NavigationApplication.instance.getReactGateway()).onReactContextInitialized(context);
+			((NavigationReactGateway) NavigationApplication.instance.getReactGateway()).onReactContextInitialized();
 			NavigationApplication.instance.onReactInitialized(context);
 		}
 

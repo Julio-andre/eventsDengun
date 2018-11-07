@@ -1,6 +1,5 @@
 package com.reactnativenavigation;
 
-import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
@@ -127,7 +126,7 @@ public abstract class NavigationApplication extends Application implements React
 
     public abstract boolean isDebug();
 
-    public boolean clearHostOnActivityDestroy(Activity activity) {
+    public boolean clearHostOnActivityDestroy() {
         return true;
     }
 

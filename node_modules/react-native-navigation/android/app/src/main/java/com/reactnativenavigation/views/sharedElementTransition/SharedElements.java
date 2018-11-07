@@ -134,7 +134,7 @@ public class SharedElements {
         Iterator<String> iterator = toElements.keySet().iterator();
         while (iterator.hasNext()) {
             String key = iterator.next();
-            if (!ViewVisibilityChecker.check(toElements.get(key)) && fromElements.get(key) != null) {
+            if (!ViewVisibilityChecker.check(toElements.get(key))) {
                 iterator.remove();
                 fromElements.get(key).show();
             }

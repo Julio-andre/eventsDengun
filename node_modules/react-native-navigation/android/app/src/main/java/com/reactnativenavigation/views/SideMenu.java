@@ -30,7 +30,7 @@ public class SideMenu extends DrawerLayout {
         }
 
         public static Side fromString(String side) {
-            return (side == null) || "left".equals(side.toLowerCase()) ? Left : Right;
+            return "left".equals(side.toLowerCase()) ? Left : Right;
         }
     }
 
