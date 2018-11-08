@@ -16,7 +16,7 @@ import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
 import { Constants, ImagePicker, Permissions } from 'react-native-image-picker';
-import Picker from '../../../utils/picker';
+import { maybeRenderImage } from '../../../utils/picker';
 
 console.disableYellowBox = true;
 
@@ -275,7 +275,7 @@ class AddPost extends Component {
 
   // To RENDER <Image source={this.state.poster} style={styles.uploadposter} />
   render() {
-    {maybeRenderImage()};
+    
     return (
         <ScrollView>
           <View style={styles.formInputContainer}>
@@ -294,6 +294,7 @@ class AddPost extends Component {
                 title="Add your Poster"
                 onPress={()=>this.addPoster()}
               />
+              {maybeRenderImage()}
             </View>
 
             <View style={{flexDirection: 'row',alignItems: 'center'}}>

@@ -9,6 +9,9 @@ import NotAllow from './src/components/views/Admin/AddPost/notallow';
 import SidedrawerComponenent from './src/components/views/Sidedrawer';
 import UserPosts from './src/components/views/Admin/UserPosts';
 import Article from './src/components/views/Article';
+import { firebaseConfig } from './src/components/utils/misc';
+
+firebase.initializeApp(firebaseConfig);
 
 const store = ConfigureStore();
 
