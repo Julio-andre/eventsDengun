@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import { navigatorDrawer, navigatorDeepLink, gridTwoColumns } from '../../utils/misc';
+import { navigatorDrawer, navigatorDeepLink, gridTwoColumns,firebaseConfig } from '../../utils/misc';
 import HorizontalScroll from './horizontal_scroll_icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -17,6 +17,8 @@ class Home extends Component {
 
     this.state = {
       isLoading:true,
+      image:null,
+      uploading:false,
       articles:[],
       categories:['All','Startup','Software','Electronics','Conference','Social','Charity'],
       categorySelected:"All"
@@ -40,14 +42,12 @@ class Home extends Component {
 
       this.setState({
         isLoading: false,
+        image:null,
+        uploading:false,
         articles: newArticles
       })
     })
 
-  }
-  async componentDidMount(){
-    await Permissions.askAsync(Permissions.CAMERA_ROLL);
-    await Permissions.askAsync(Permissions.CAMERA);
   }
 
   componentDidMount(){
@@ -56,6 +56,8 @@ class Home extends Component {
 
       this.setState({
         isLoading: false,
+        image:null,
+        uploading:false,
         articles: newArticles
       })
     })

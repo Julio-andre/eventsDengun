@@ -6,10 +6,7 @@ import ValidationRules from '../../utils/forms/validationRules';
 import LoadTabs from '../Tabs';
 
 import { connect } from 'react-redux';
-import uuid from 'uuid';
-import * as firebase from 'firebase';
 import { bindActionCreators } from 'redux';
-
 import { setTokens } from '../../utils/misc';
 
 
@@ -19,8 +16,6 @@ class LoginForm extends Component {
         action:'Login',
         actionMode:'Not a user, Register',
         hasErrors:false,
-        image:null,
-        uploading:false,
         form:{
             email:{
                 value:"",
@@ -151,7 +146,6 @@ class LoginForm extends Component {
     }
 
     render(){
-        let { image } = this.state;
         return(
             <View style={styles.formInputContainer}>
                

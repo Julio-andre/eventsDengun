@@ -7,7 +7,6 @@ import com.imagepicker.ImagePickerPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationReactPackage;
-import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationReactPackage;
 import com.facebook.react.ReactNativeHost;
@@ -17,6 +16,8 @@ import com.facebook.soloader.SoLoader;
 import com.reactnativenavigation.NavigationApplication;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.imagepicker.ImagePickerPackage;
+import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -58,7 +59,9 @@ public class MainApplication extends NavigationApplication {
       return Arrays.<ReactPackage>asList(
         new VectorIconsPackage(),
         new NavigationReactPackage(),
-        new ImagePickerPackage()
+        new ImagePickerPackage(),
+        new RNFirebasePackage(),
+        new RNFirebaseStoragePackage()
       );
   }
 

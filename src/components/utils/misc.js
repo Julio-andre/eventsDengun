@@ -3,9 +3,20 @@ import {
     Platform,
     AsyncStorage
 } from 'react-native';
+import uuid from 'uuid';
+import * as firebase from 'firebase';
 // import RNFetchBlob from 'rn-fetch-blob';
 
 console.disableYellowBox = true;
+
+firebase.initializeHome(firebaseConfig);
+
+export const  {
+    state = {
+      image: null,
+      uploading: false,
+    }
+};
 
 export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`
 
@@ -14,11 +25,11 @@ export const firebaseConfig = {
     APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`,
     authDomain: `eventsdengun.firebaseio.com`,
     storageBucket: `eventsdengun.appspot.com`,
-    messagingSenderId: '119427405309',
-    SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`,
-    SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`,
-    REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
+    messagingSenderId: '119427405309'  
 };
+export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
+export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
+export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
 
 export const Blob = `RNFetchBlob.polyfill.Blob`
 export const fs = `RNFetchBlob.fs`
