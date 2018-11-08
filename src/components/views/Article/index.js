@@ -154,6 +154,8 @@ const Article= (props) => {
             {maybeRenderImage()}
             {articleText()}
             {ownerNfo()}
+            {copyToClipboard()}
+            {share()}
         </ScrollView>
     )
 }
