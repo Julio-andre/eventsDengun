@@ -3,22 +3,10 @@ import {
     Platform,
     AsyncStorage
 } from 'react-native';
-import uuid from 'uuid';
-import * as firebase from 'firebase';
-// import RNFetchBlob from 'rn-fetch-blob';
 
 console.disableYellowBox = true;
 
-firebase.initializeHome(firebaseConfig);
-
-export const  {
-    state = {
-      image: null,
-      uploading: false,
-    }
-};
-
-export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`
+// export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`
 
 export const firebaseConfig = {
     FIREBASEURL = `https://eventsdengun.firebaseio.com`,

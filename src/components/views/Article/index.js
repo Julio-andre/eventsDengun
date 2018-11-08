@@ -7,7 +7,6 @@ import {
     ScrollView,
     Linking
 } from 'react-native';
-import uuid from 'uiid';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -30,31 +29,6 @@ const Article= (props) => {
             </Text>
         </View>
     )
-
-    const maybeRenderUploadingOverlay = () => {
-        if (this.state.uploading) {
-          return (
-            <View
-              style={[
-                StyleSheet.absoluteFill,
-                {
-                  backgroundColor: 'rgba(0,0,0,0.4)',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                },
-              ]}>
-              <ActivityIndicator color="#fff" animating size="large" />
-            </View>
-          );
-        }
-      };
-    
-    const maybeRenderImage = () => {
-        let { image } = this.state;
-        if (!image) {
-          return;
-        }
-    }
 
     const articleText = () => (
         <View>
@@ -98,55 +72,11 @@ const Article= (props) => {
         &subject=Regarding ${props.ArticleData.title}`)
     }
 
-    const share = () => {
-        Share.share({
-          message: this.state.image,
-          title: 'Check out this photo',
-          url: this.state.image,
-        });
-      };
-
     const copyToClipboard = () => {
         Clipboard.setString(this.state.image);
         alert('Copied image URL to clipboard');
       };
 
-    const pickImage = async () => {
-        let pickerResult = await ImagePicker.launchImageLibraryAsync({
-          allowsEditing: true,
-          aspect: [4, 3],
-        });
-    
-        this._handleImagePicked(pickerResult);
-      };
-    
-    const handleImagePicked = async pickerResult => {
-        try {
-          this.setState({ uploading: true });
-    
-          if (!pickerResult.cancelled) {
-            uploadUrl = await uploadImageAsync(pickerResult.uri);
-            this.setState({ image: uploadUrl });
-          }
-        } catch (e) {
-          console.log(e);
-          alert('Upload failed, sorry :(');
-        } finally {
-          this.setState({ uploading: false });
-        }
-      };
-
-    const uploadImageAsync = async uri => {
-        const response = await fetch(uri);
-        const blob = await response.blob();
-        const ref = firebase
-          .storage()
-          .ref()
-          .child(uuid.v4());
-      
-        const snapshot = await ref.put(blob);
-        return snapshot.downloadURL;
-    };
     return (
         <ScrollView style={styles.articleContainer}>
             {articleImage()}

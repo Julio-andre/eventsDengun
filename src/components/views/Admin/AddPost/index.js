@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Button, Modal } from 'react-native';
-import { 
+import { StyleSheet, Text, View, ScrollView, Image, Button, Modal, 
+  ActivityIndicator, Clipboard, Share, StatusBar, TouchableOpacity } from 'react-native';
+
+  import { 
   navigatorDrawer,
   getTokens,
-  setTokens,
-  Blob,
-  fs
-} from '../../../utils/misc';
+  setTokens } from '../../../utils/misc';
 
 import Input from '../../../utils/forms/inputs';
 import ValidationRules from '../../../utils/forms/validationRules';
@@ -14,10 +13,12 @@ import ValidationRules from '../../../utils/forms/validationRules';
 import { connect } from 'react-redux';
 import { addArticle, resetArticle } from '../../../Store/actions/articles_actions';
 import { autoSignIn } from '../../../Store/actions/user_actions';
-import { bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux';
 
-import ImagePicker from "react-native-image-picker";
-import firebase from 'firebase';
+import { Constants, ImagePicker, Permissions } from 'react-native-image-picker';
+import Picker from '../../../utils/picker';
+
+console.disableYellowBox = true;
 
 class AddPost extends Component {
   constructor(props){
@@ -28,9 +29,10 @@ class AddPost extends Component {
     })
   }
 
-
   state = {
     loading:false,
+    image:null,
+    uploading:false,
     hasErrors:false,
     modalVisible:false,
     modalSuccess:false,
@@ -183,6 +185,11 @@ class AddPost extends Component {
     }
   }
 
+  componentDidMount() {
+    await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    await Permissions.askAsync(Permissions.CAMERA);
+  }
+
   showErrorsArray = (errors) => (
     errors ? 
       errors.map((item,i)=>(
@@ -217,15 +224,15 @@ class AddPost extends Component {
     this.props.resetArticle();
 
   }
-// Response Object: didCancel, error, customButton, data, uri, origURL,
-// isVertical, width, height, fileSize, type, fileName(android photos), path, latitude, 
-// longitude, timestamp, originalRotation
+  // Response Object: didCancel, error, customButton, data, uri, origURL,
+  // isVertical, width, height, fileSize, type, fileName(android photos), path, latitude, 
+  // longitude, timestamp, originalRotation
 
-//title, cancelButtonTitle, takePhotoButtonTitle, choseFromLibraryButtonTitle,
-//customButtons, cameratype, mediaType, maxWidth, maxHeight, quality,
-//videoQuality, durationLimit, rotation, allowsEditing, noData, storageOptions,
-//storageOptions.skipBackup, storageOptions.path, storageOptions.path,
-//storageOptions.cameraRoll
+  //title, cancelButtonTitle, takePhotoButtonTitle, choseFromLibraryButtonTitle,
+  //customButtons, cameratype, mediaType, maxWidth, maxHeight, quality,
+  //videoQuality, durationLimit, rotation, allowsEditing, noData, storageOptions,
+  //storageOptions.skipBackup, storageOptions.path, storageOptions.path,
+  //storageOptions.cameraRoll
     addPoster = () => {
       ImagePicker.showImagePicker({
         title:'Select your Poster of the Event',
@@ -255,16 +262,11 @@ class AddPost extends Component {
 //      console.log('User tapped custom button: ', response.customButton);
 //    } else {
 //      let source = { uri: response.uri };
-
-// Can also display the image using data:
-// let source = { uri: 'data:image/jpeg;base64,' + response.data };
-
 //      this.setState({
 //        avatarSource: source
 //      });
 //     }
 //   });
-
 
   //Directly Launching the Camera
   //ImagePicker.launchCamera{options, (response) => {
@@ -273,6 +275,7 @@ class AddPost extends Component {
 
   // To RENDER <Image source={this.state.poster} style={styles.uploadposter} />
   render() {
+    {maybeRenderImage()};
     return (
         <ScrollView>
           <View style={styles.formInputContainer}>

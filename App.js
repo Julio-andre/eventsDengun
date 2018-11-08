@@ -10,8 +10,6 @@ import SidedrawerComponenent from './src/components/views/Sidedrawer';
 import UserPosts from './src/components/views/Admin/UserPosts';
 import Article from './src/components/views/Article';
 
-firebase.initializeApp(firebaseConfig);
-
 const store = ConfigureStore();
 
 Navigation.registerComponent(
@@ -64,9 +62,6 @@ Navigation.registerComponent(
   store,
   Provider
 );
-
-
-
 
 export default () => Navigation.startSingleScreenApp({
   screen:{
