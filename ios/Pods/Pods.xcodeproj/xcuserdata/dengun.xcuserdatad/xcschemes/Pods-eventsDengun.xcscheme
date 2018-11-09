@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88F3B83EE7302FBFC98807833A8861F5"
+               BlueprintIdentifier = "8F7C2CAFFDBDD42B8640AA7C09C2D831"
                BuildableName = "Pods_eventsDengun.framework"
                BlueprintName = "Pods-eventsDengun"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "88F3B83EE7302FBFC98807833A8861F5"
+            BlueprintIdentifier = "8F7C2CAFFDBDD42B8640AA7C09C2D831"
             BuildableName = "Pods_eventsDengun.framework"
             BlueprintName = "Pods-eventsDengun"
             ReferencedContainer = "container:Pods.xcodeproj">

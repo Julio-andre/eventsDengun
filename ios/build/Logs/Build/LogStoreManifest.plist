@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>17426559-0F9E-49DE-B1C7-08F58590A930</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>17426559-0F9E-49DE-B1C7-08F58590A930.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>eventsDengun project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>eventsDengun</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>563451305.84073806</real>
+			<key>timeStoppedRecording</key>
+			<real>563451319.52034295</real>
+			<key>title</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>17426559-0F9E-49DE-B1C7-08F58590A930</string>
+		</dict>
+		<key>5105ADAE-B2E0-47B0-BAE6-71F997B6D274</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5105ADAE-B2E0-47B0-BAE6-71F997B6D274.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>eventsDengun project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>eventsDengun</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>563451469.02823699</real>
+			<key>timeStoppedRecording</key>
+			<real>563451472.12533605</real>
+			<key>title</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>5105ADAE-B2E0-47B0-BAE6-71F997B6D274</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
