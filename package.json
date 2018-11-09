@@ -6,7 +6,7 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-react-native": "^18.0.0",
     "react-test-renderer": "16.2.0",
-    "schedule": "0.4.0"
+    "schedule": "^0.4.0"
   },
   "scripts": {
     "start": "react-native start",
@@ -27,7 +27,7 @@
     "@babel/core": "7.0.0",
     "@babel/runtime": "7.0.0",
     "axios": "^0.18.0",
-    "react": "^16.5.0",
+    "react": "^16.6.1",
     "react-native": "^0.57.4",
     "react-native-firebase": "^5.1.0",
     "react-native-image-picker": "^0.27.1",
