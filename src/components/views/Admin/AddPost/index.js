@@ -244,8 +244,6 @@ class AddPost extends Component {
                 title="Add your Image"
                 onPress={()=>this.pickImage()}
               />
-              {maybeRenderImage()}
-              {handleImagePicked()}
             </View>
 
             <View style={{flexDirection: 'row',alignItems: 'center'}}>
