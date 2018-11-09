@@ -15,9 +15,6 @@ import { addArticle, resetArticle } from '../../../Store/actions/articles_action
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
-import { Constants, ImagePicker, Permissions } from 'react-native-image-picker';
-import { maybeRenderImage, pickImage } from '../../../utils/picker/picker';
-
 console.disableYellowBox = true;
 
 class AddPost extends Component {

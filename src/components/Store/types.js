@@ -7,3 +7,4 @@ export const DELETE_USER_POST = 'delete_user_post';
 export const GET_ARTICLES = 'get_articles';
 export const ADD_ARTICLE = 'add_articles';
 export const RESET_ARTICLE = 'reset_article';
+export const RESET_USER = 'reset_user';

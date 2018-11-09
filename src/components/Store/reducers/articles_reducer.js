@@ -1,7 +1,8 @@
 import {
     GET_ARTICLES,
     ADD_ARTICLE,
-    RESET_ARTICLE
+    RESET_ARTICLE,
+    RESET_USER
 } from '../types';
 
 export default function(state={},action){
@@ -12,6 +13,8 @@ export default function(state={},action){
             return {...state, newArticle:action.payload}
         case RESET_ARTICLE:
             return {...state, newArticle:action.payload }
+        case RESET_USER:
+            return {...state, signIn:action.payload }
         default:
             return state;
     }
