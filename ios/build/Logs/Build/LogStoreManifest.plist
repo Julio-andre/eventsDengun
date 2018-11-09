@@ -35,7 +35,7 @@
 			<key>uniqueIdentifier</key>
 			<string>1B5FC9FD-2BCC-4CB2-9871-FA308A387C16</string>
 		</dict>
-		<key>6E5152FA-2C7B-46D5-9517-7E81D49E9A0C</key>
+		<key>DE2084F8-5E16-4820-A29E-F4B071AD5B8A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6E5152FA-2C7B-46D5-9517-7E81D49E9A0C.xcactivitylog</string>
+			<string>DE2084F8-5E16-4820-A29E-F4B071AD5B8A.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,13 +56,13 @@
 			<key>signature</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>563469043.96598697</real>
+			<real>563472911.98360598</real>
 			<key>timeStoppedRecording</key>
-			<real>563469047.28264594</real>
+			<real>563473169.29311097</real>
 			<key>title</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>6E5152FA-2C7B-46D5-9517-7E81D49E9A0C</string>
+			<string>DE2084F8-5E16-4820-A29E-F4B071AD5B8A</string>
 		</dict>
 	</dict>
 </dict>

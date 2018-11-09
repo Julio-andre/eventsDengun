@@ -72,26 +72,6 @@ class SidedrawerComponent extends Component {
         ))
     )
 
-    resetUserLogScreen = () => {
-        const formCopy = this.state.form;
-    
-        for(let key in formCopy){
-          formCopy[key].valid = false;
-          formCopy[key].value = "";
-        }
-    
-        this.setState({
-          modalSuccess:false,
-          hasErrors:false,
-          errorsArray:[],
-          loading:false
-        })
-    
-        this.props.resetUser();
-    
-      }
-
-
     render(){
         return(
           <View style={styles.container}>

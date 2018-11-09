@@ -56,10 +56,3 @@ export function resetArticle(){
         payload:""
     }
 }
-
-export function resetUser(){
-    return {
-        type: RESET_USER,
-        payload:""
-    }
-}
