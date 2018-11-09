@@ -8,15 +8,14 @@ import uuid from 'uuid';
 
 console.disableYellowBox = true;
 
-// export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`
+export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`;
 
-export const firebaseConfig = {
-    FIREBASEURL = `https://eventsdengun.firebaseio.com`,
-    APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`,
-    authDomain: `eventsdengun.firebaseio.com`,
-    storageBucket: `eventsdengun.appspot.com`,
-    messagingSenderId: '119427405309'  
-};
+export const FIREBASEURL = `https://eventsdengun.firebaseio.com`;
+export const APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`;
+export const authDomain = `eventsdengun.firebaseio.com`;
+export const storageBucket = `eventsdengun.appspot.com`;
+export const messagingSenderId = '119427405309';
+
 export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
 export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
 export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
@@ -77,6 +76,7 @@ export const navigatorDeepLink = (event, $this) =>{
 
 export const getTokens = (cb) => {
     AsyncStorage.multiGet([
+        '@eventsDengun@authDomain',
         '@eventsDengun@token',
         '@eventsDengun@refreshToken',
         '@eventsDengun@expireToken',
@@ -91,6 +91,7 @@ export const setTokens = (values,cb) => {
     const expiration = dateNow.getTime() + (3600 * 1000);
 
     AsyncStorage.multiSet([
+        ['@eventsDengun@authDomain', values.auth],
         ['@eventsDengun@token', values.token],
         ['@eventsDengun@refreshToken', values.refToken],
         ['@eventsDengun@expireToken', expiration.toString()],

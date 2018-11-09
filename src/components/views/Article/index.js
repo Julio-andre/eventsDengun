@@ -8,11 +8,6 @@ import {
     Linking
 } from 'react-native';
 
-import { 
-    maybeRenderUploadingOverlay, 
-    maybeRenderImage,
-    share } from '../../utils/picker/picker';
-
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Article= (props) => {
@@ -85,8 +80,6 @@ const Article= (props) => {
     return (
         <ScrollView style={styles.articleContainer}>
             {articleImage()}
-            {maybeRenderUploadingOverlay()}
-            {maybeRenderImage()}
             {articleText()}
             {ownerNfo()}
             {copyToClipboard()}
