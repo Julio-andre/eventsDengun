@@ -8,6 +8,11 @@ import {
     Linking
 } from 'react-native';
 
+import { 
+    maybeRenderUploadingOverlay, 
+    maybeRenderImage,
+    share } from '../../utils/picker';
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Article= (props) => {

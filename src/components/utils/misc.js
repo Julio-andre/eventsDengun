@@ -42,7 +42,6 @@ export const getPlatform = () => {
     }
 }
 
-
 export const navigatorDrawer = (event, $this) => {
     if(event.type === "NavBarButtonPress" && event.id === "DrawerButton"){
         $this.props.navigator.toggleDrawer({
@@ -51,7 +50,6 @@ export const navigatorDrawer = (event, $this) => {
         })  
     }
 }
-
 
 export const navigatorDeepLink = (event, $this) =>{
     if(event.type === 'DeepLink'){
@@ -77,7 +75,6 @@ export const navigatorDeepLink = (event, $this) =>{
         }
     }
 }
-
 
 export const getTokens = (cb) => {
     AsyncStorage.multiGet([

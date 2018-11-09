@@ -105,7 +105,7 @@ export const handleImagePicked = async pickerResult => {
 };
 
 
-export async function uploadImageAsync(uri) {
+export function uploadImageAsync(uri) {
     const response = await fetch(uri);
     const blob = await response.blob();
     const ref = firebase
