@@ -3,6 +3,8 @@ import {
     Platform,
     AsyncStorage
 } from 'react-native';
+import firebase from 'react-native-firebase';
+import uuid from 'uuid';
 
 console.disableYellowBox = true;
 
