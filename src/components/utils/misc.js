@@ -19,9 +19,6 @@ export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingpart
 export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
 export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
 
-export const Blob = `RNFetchBlob.polyfill.Blob`
-export const fs = `RNFetchBlob.fs`
-
 export const getOrientation = (value) =>{
     return Dimensions.get("window").height > value ? "portrait" : "landscape" 
 }

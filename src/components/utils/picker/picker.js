@@ -107,12 +107,11 @@ export const handleImagePicked = async pickerResult => {
 
 export function uploadImageAsync(uri) {
     const response = await fetch(uri);
-    const blob = await response.blob();
     const ref = firebase
         .storage()
         .ref()
         .child(uuid.v4());
 
-    const snapshot = await ref.put(blob);
+    const snapshot = await ref.put(response);
   return snapshot.downloadURL;
 }
