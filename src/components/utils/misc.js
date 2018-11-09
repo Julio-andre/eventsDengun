@@ -3,19 +3,20 @@ import {
     Platform,
     AsyncStorage
 } from 'react-native';
-import firebase from 'react-native-firebase';
+
 import uuid from 'uuid';
 
 console.disableYellowBox = true;
 
 export const url = `https://firebasestorage.googleapis.com/v0/b/eventsdengun.appspot.com/o/`;
 
-export const FIREBASEURL = `https://eventsdengun.firebaseio.com`;
-export const APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`;
-export const authDomain = `eventsdengun.firebaseio.com`;
-export const storageBucket = `eventsdengun.appspot.com`;
-export const messagingSenderId = '119427405309';
-
+export const firebaseConfig = {
+    FIREBASEURL:`https://eventsdengun.firebaseio.com`,
+    APIKEY:`AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`,
+    authDomain:`eventsdengun.firebaseio.com`,
+    storageBucket:`eventsdengun.appspot.com`,
+    messagingSenderId:'119427405309'
+}
 export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`
 export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`
 export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`
