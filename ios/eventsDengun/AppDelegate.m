@@ -9,7 +9,7 @@
 
 #import "AppDelegate.h"
 #import <React/RCTBundleURLProvider.h>
-@import Firebase;
+#import <Firebase.h>//;
 #import "RCCManager.h"
 
 #import <React/RCTRootView.h>

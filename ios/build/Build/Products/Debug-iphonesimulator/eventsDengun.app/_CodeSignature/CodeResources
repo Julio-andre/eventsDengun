@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/GoogleUtilities</key>
 		<data>
-		wxDAUJx+5vn3qrjMEGvkJ5vMjfM=
+		VjJilYsHlomiqT+kjSywrZJngRQ=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
 		<data>
@@ -103,7 +103,7 @@
 		</data>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<data>
-		6GOZzTpN4J+hj6gkGkpMWsxiKh4=
+		1PG/XoqCEmImdceKcany6Vu9AA0=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -372,11 +372,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wxDAUJx+5vn3qrjMEGvkJ5vMjfM=
+			VjJilYsHlomiqT+kjSywrZJngRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0QmwvjikTgLRaLUi2pcazVmZVV0L+hyy5LLV6CmpbyY=
+			f/kqtnl7+9L/WioufkwCuortB36yB1eLP7fJ5WdAaK0=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
@@ -495,11 +495,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6GOZzTpN4J+hj6gkGkpMWsxiKh4=
+			1PG/XoqCEmImdceKcany6Vu9AA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1oo3Cq4kET7nBKWmUlqCYfHMLOP/5xAcR8JE6t9cidw=
+			wfVEdI7ybAhuouZpOSPbaFI9hewTteiGyoiqZAHNi0A=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
