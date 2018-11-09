@@ -24,18 +24,6 @@
 		<data>
 		E7HqtlqYPHpzvHmXxHnWaUP3xss=
 		</data>
-		<key>FontAwesome5_Brands.ttf</key>
-		<data>
-		grn/4L28SVheCDsHNWSzXlD6Cdc=
-		</data>
-		<key>FontAwesome5_Regular.ttf</key>
-		<data>
-		9g09gMIWA5vFMbtbzLdJj/uNipo=
-		</data>
-		<key>FontAwesome5_Solid.ttf</key>
-		<data>
-		WiG+2H4jPlxeguo6ACFcVEg34SU=
-		</data>
 		<key>Foundation.ttf</key>
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
@@ -119,7 +107,7 @@
 		</data>
 		<key>MaterialCommunityIcons.ttf</key>
 		<data>
-		PmK9EV4HWGvLGebzfI+xJbJhwQU=
+		qsYaaEAlreJgw0cwmpP4T0ugnSE=
 		</data>
 		<key>MaterialIcons.ttf</key>
 		<data>
@@ -127,7 +115,7 @@
 		</data>
 		<key>Octicons.ttf</key>
 		<data>
-		o/QP7s8JqAqYbxLVfGRtK0Wa+so=
+		43wPh5FmspBv+00q8kJl9AIbRBc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -289,39 +277,6 @@
 			<key>hash2</key>
 			<data>
 			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
-			</data>
-		</dict>
-		<key>FontAwesome5_Brands.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			grn/4L28SVheCDsHNWSzXlD6Cdc=
-			</data>
-			<key>hash2</key>
-			<data>
-			VmDKN8uFHpEU+IgABQpNa1v4cdSL/n5ta6QzLYIgJV8=
-			</data>
-		</dict>
-		<key>FontAwesome5_Regular.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9g09gMIWA5vFMbtbzLdJj/uNipo=
-			</data>
-			<key>hash2</key>
-			<data>
-			E8IiY5q9YR0GZhnBZcWPWWs63Q1mSxsyvrfH6Cya8hE=
-			</data>
-		</dict>
-		<key>FontAwesome5_Solid.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WiG+2H4jPlxeguo6ACFcVEg34SU=
-			</data>
-			<key>hash2</key>
-			<data>
-			B3erbrnUcU8/Dw3dcYQ2/iIhqayo0EN1oVC1evRaAhU=
 			</data>
 		</dict>
 		<key>Foundation.ttf</key>
@@ -528,11 +483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PmK9EV4HWGvLGebzfI+xJbJhwQU=
+			qsYaaEAlreJgw0cwmpP4T0ugnSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZwu36A5UVfTI1RNRiYHlZev6tjZiaFR6Ph0lGvHbeU=
+			q9ds9276vErG0wDQjAHtvPQadpxhrJDfPQ8UGJDid2g=
 			</data>
 		</dict>
 		<key>MaterialIcons.ttf</key>
@@ -550,11 +505,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o/QP7s8JqAqYbxLVfGRtK0Wa+so=
+			43wPh5FmspBv+00q8kJl9AIbRBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8KI41G1nSeYBwS8g+PwDIB8Ze5/jR75MLJRP/FxLYDU=
+			IDC914RgQrcm7e1pDO4UjqugvZKBAae3xLoaLztAPMg=
 			</data>
 		</dict>
 		<key>PlugIns/eventsDengunTests.xctest.dSYM/Contents/Info.plist</key>
