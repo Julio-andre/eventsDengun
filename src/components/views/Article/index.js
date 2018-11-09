@@ -11,7 +11,7 @@ import {
 import { 
     maybeRenderUploadingOverlay, 
     maybeRenderImage,
-    share } from '../../utils/picker';
+    share } from '../../utils/picker/picker';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 

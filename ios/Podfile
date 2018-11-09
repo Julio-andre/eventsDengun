@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'eventsDengun' do
 #
+  pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Storage', '~> 5.11.0'
 

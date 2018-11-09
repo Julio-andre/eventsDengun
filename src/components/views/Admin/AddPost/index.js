@@ -16,7 +16,7 @@ import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
 import { Constants, ImagePicker, Permissions } from 'react-native-image-picker';
-import { maybeRenderImage, pickImage } from '../../../utils/picker';
+import { maybeRenderImage, pickImage } from '../../../utils/picker/picker';
 
 console.disableYellowBox = true;
 
@@ -184,10 +184,7 @@ class AddPost extends Component {
     }
   }
 
-  componentDidMount() {
-    await Permissions.askAsync(Permissions.CAMERA_ROLL);
-    await Permissions.askAsync(Permissions.CAMERA);
-  }
+  
 
   showErrorsArray = (errors) => (
     errors ? 
