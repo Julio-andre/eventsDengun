@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 import Input from '../../utils/forms/inputs';
 import ValidationRules from '../../utils/forms/validationRules';
 import LoadTabs from '../Tabs';
 
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { signUp, signIn } from '../../Store/actions/user_actions';
+import { bindActionCreators } from 'redux';
+
 import { setTokens } from '../../utils/misc';
 
 class LoginForm extends Component {
@@ -141,7 +142,6 @@ class LoginForm extends Component {
     }
 
     render(){
-        alert(error);
         return(
             <View style={styles.formInputContainer}>
                <Input 

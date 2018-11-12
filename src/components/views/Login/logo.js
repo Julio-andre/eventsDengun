@@ -6,8 +6,7 @@ class Logo extends Component {
 
     state = {
         denAnim: new Animated.Value(0),
-        gunAnim: new Animated.Value(0),
-        evenAnim: new Animated.Value(0),
+        gunAnim: new Animated.Value(0)
     }
 
     componentWillMount(){
@@ -20,11 +19,6 @@ class Logo extends Component {
             Animated.timing(this.state.gunAnim,{
                 toValue:1,
                 duration:500,
-                easing:Easing.easeOutCubic
-            }),
-            Animated.timing(this.state.evenAnim,{
-                toValue:1,
-                duration:1000,
                 easing:Easing.easeOutCubic
             })
         ]).start(()=>{
@@ -57,12 +51,6 @@ class Logo extends Component {
                     >
                         <Text style={styles.gun}>GUN</Text>
                     </Animated.View>
-                    <Animated.View style={{
-                        opacity:this.state.evenAnim
-                    }}
-                    >
-                        <Text style={styles.even}>Events</Text>
-                    </Animated.View>
 
                </View>
            </View>
@@ -92,12 +80,7 @@ const styles = StyleSheet.create({
         fontSize: 40,
         fontFamily: 'RobotoCondensed-Regular',
         color:'#00ADA9'
-    },
-    even:{
-        fontSize: 40,
-        fontFamily: 'RobotoCondensed-Regular',
-        color:'#555555'
-    },
+    }
 })
 
 export default Logo;
