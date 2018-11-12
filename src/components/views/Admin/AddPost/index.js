@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Button, Modal, 
-  ActivityIndicator, Clipboard, Share, StatusBar, TouchableOpacity } from 'react-native';
-
-  import { 
+import { StyleSheet, Text, View, ScrollView, Image, Button, Modal } from 'react-native';
+import { 
   navigatorDrawer,
   getTokens,
-  setTokens } from '../../../utils/misc';
+  setTokens 
+} from '../../../utils/misc';
 
 import Input from '../../../utils/forms/inputs';
 import ValidationRules from '../../../utils/forms/validationRules';
@@ -14,8 +13,6 @@ import { connect } from 'react-redux';
 import { addArticle, resetArticle } from '../../../Store/actions/articles_actions';
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
-
-console.disableYellowBox = true;
 
 class AddPost extends Component {
   constructor(props){
@@ -28,7 +25,7 @@ class AddPost extends Component {
 
   state = {
     loading:false,
-    image:'',
+    image:[],
     uploading:false,
     hasErrors:false,
     modalVisible:false,
@@ -219,7 +216,6 @@ class AddPost extends Component {
   }
 
   render() {
-    
     return (
         <ScrollView>
           <View style={styles.formInputContainer}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TextInput, Picker } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Picker } from 'react-native';
 
 const input = (props) => {
     let template = null;

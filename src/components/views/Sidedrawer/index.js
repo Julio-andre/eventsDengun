@@ -29,7 +29,7 @@ class SidedrawerComponent extends Component {
                 iconName: "th-list",
                 shouldGoto: "eventsDengun.UserPosts",
                 typeLink: "view",
-                index: null,
+                index: [],
                 privacy: true
             },
             {
@@ -37,7 +37,7 @@ class SidedrawerComponent extends Component {
                 iconName: "power-off",
                 shouldGoto: "eventsDengun.loginForm",
                 typeLink: "view",
-                index: null,
+                index: [],
                 privacy: true
             }
         ]

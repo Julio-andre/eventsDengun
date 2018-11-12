@@ -7,25 +7,25 @@ const categoriesIcons = (value) => {
     let name = '';
     switch(value){
         case 'All':
-            name = 'crystal-ball';
+            name = 'crosshairs';
             break;
         case 'Startup':
             name = 'kickstarter'
             break;
         case 'Software':
-            name = 'wifi-strength-4'
+            name = 'desktop-mac'
             break;
         case 'Electronics':
-            name = 'robot-industrial'
+            name = 'engine'
             break;
         case 'Conference':
             name = 'gesture-double-tap'
             break;
         case 'Social':
-            name = 'mastodon-variant'
+            name = 'hexagon-multiple'
             break;
         case 'Charity':
-            name = 'egg-easter'
+            name = 'heart-pulse'
             break;
         default:
             name = ''

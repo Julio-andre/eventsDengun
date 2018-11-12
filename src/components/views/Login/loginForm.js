@@ -10,7 +10,6 @@ import { bindActionCreators } from 'redux';
 import { signUp, signIn } from '../../Store/actions/user_actions';
 import { setTokens } from '../../utils/misc';
 
-
 class LoginForm extends Component {
     state = {
         type:'Login',
@@ -106,11 +105,6 @@ class LoginForm extends Component {
         }
     }
 
-    async componentDidMount() {
-        await Permissions.askAsync(Permissions.CAMERA_ROLL);
-        await Permissions.askAsync(Permissions.CAMERA);
-      }
-
     submitUser = () => {
         let isFormValid = true;
         let formToSubmit = {};
@@ -147,9 +141,9 @@ class LoginForm extends Component {
     }
 
     render(){
+        alert(error);
         return(
             <View style={styles.formInputContainer}>
-               
                <Input 
                     placeholder="Enter your email"
                     type={this.state.form.email.type}
@@ -158,8 +152,6 @@ class LoginForm extends Component {
                     autoCapitalize={"none"}
                     keyboardType={"email-address"}
                />
-
-                
                 <Input
                     placeholder="Enter your password"
                     type={this.state.form.password.type}
@@ -182,7 +174,6 @@ class LoginForm extends Component {
                         onPress={this.submitUser}
                     />
                 </View>
-
                 <View style={
                     this.props.platform === "android"
                     ? styles.buttonStyleAndroid
@@ -194,7 +185,6 @@ class LoginForm extends Component {
                         onPress={this.changeFormType}
                     />
                 </View>
-
                 <View>
                     <Button
                         title="I'll do it later"
@@ -202,15 +192,11 @@ class LoginForm extends Component {
                         onPress={()=> LoadTabs(false)}
                     />
                 </View>
-
-
             </View>
             
         )
     }
 }
-
-
 
 const styles = StyleSheet.create({
     formInputContainer:{

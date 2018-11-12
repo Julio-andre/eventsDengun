@@ -8,11 +8,11 @@ import {
     Linking
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Article= (props) => {
     state = {
-        image: null,
+        image: [],
         uploading: false,
       };
     
@@ -55,7 +55,7 @@ const Article= (props) => {
             <Text>Contact the owner of this article to the following mail:</Text>
        
             <Icon.Button
-                name="envelope-o"
+                name="checkbook"
                 color="#00ADA9"
                 backgroundColor="#ffffff"
                 onPress={()=> openEmail()}

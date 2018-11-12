@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Text, View, Button } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Navigation } from 'react-native-navigation';
 
 import { navigatorDrawer } from '../../../utils/misc';
@@ -12,7 +12,6 @@ class NotAllow extends Component {
         this.props.navigator.setOnNavigatorEvent((event)=>{
             navigatorDrawer(event, this)
         })
-
     }
 
     render(){
@@ -22,32 +21,32 @@ class NotAllow extends Component {
               alignItems:'center',
               justifyContent:'center'
           }}>
-                <Icon
-                    name="frown-o"
-                    size={60}
-                    color="#F44336"
-                />
-                <Text>
-                    You need to log in or register to post your Events !!!
-                </Text>
+            <Icon
+                name="alert-outline"
+                size={60}
+                color="#F44336"
+            />
+            <Text>
+                You need to log in or register to post your Events !!!
+            </Text>
 
-                <View style={{marginTop:20}}>
-                    <Button
-                        title="LOGIN / REGISTER"
-                        color="#FD9727"
-                        onPress={()=>{
-                            Navigation.startSingleScreenApp({
-                                screen:{
-                                screen:"eventsDengun.Login",
-                                title:"Login",
-                                navigatorStyle:{
-                                    navBarHidden:true
-                                }
-                                }
-                            })
-                        }}
-                    /> 
-                </View>
+            <View style={{marginTop:20}}>
+                <Button
+                    title="LOGIN / REGISTER"
+                    color="#FD9727"
+                    onPress={()=>{
+                        Navigation.startSingleScreenApp({
+                            screen:{
+                            screen:"eventsDengun.Login",
+                            title:"Login",
+                            navigatorStyle:{
+                                navBarHidden:true
+                            }
+                            }
+                        })
+                    }}
+                /> 
+            </View>
                 
 
           </View>
