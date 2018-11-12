@@ -31,6 +31,14 @@ class SidedrawerComponent extends Component {
                 typeLink: "view",
                 index: null,
                 privacy: true
+            },
+            {
+                value: "Logout",
+                iconName: "power-off",
+                shouldGoto: "eventsDengun.loginForm",
+                typeLink: "view",
+                index: null,
+                privacy: true
             }
         ]
     }

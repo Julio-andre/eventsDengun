@@ -6,35 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>1B5FC9FD-2BCC-4CB2-9871-FA308A387C16</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1B5FC9FD-2BCC-4CB2-9871-FA308A387C16.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>eventsDengun project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>eventsDengun</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>563469661.92566299</real>
-			<key>timeStoppedRecording</key>
-			<real>563470078.58893394</real>
-			<key>title</key>
-			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>1B5FC9FD-2BCC-4CB2-9871-FA308A387C16</string>
-		</dict>
 		<key>DE2084F8-5E16-4820-A29E-F4B071AD5B8A</key>
 		<dict>
 			<key>className</key>

@@ -7,6 +7,7 @@ import LoadTabs from '../Tabs';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { signUp, signIn } from '../../Store/actions/user_actions';
 import { setTokens } from '../../utils/misc';
 
 
@@ -239,7 +240,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({firebase},dispatch)
+    return bindActionCreators({signUp,signIn},dispatch)
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(LoginForm)

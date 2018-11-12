@@ -20,16 +20,16 @@ dependencies: \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
-  /Users/dengun/Documents/react-pro/eventsDengun/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/dengun/Documents/react-pro/eventsDengun/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h \
   /Users/dengun/Documents/react-pro/eventsDengun/ios/build/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h \

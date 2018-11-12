@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import { navigatorDrawer, navigatorDeepLink, gridTwoColumns,firebase } from '../../utils/misc';
+import { navigatorDrawer, navigatorDeepLink, gridTwoColumns } from '../../utils/misc';
 import HorizontalScroll from './horizontal_scroll_icons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
