@@ -83,7 +83,7 @@ class LoginForm extends Component {
         this.setState({
             type: type === 'Login' ? 'Register' : 'Login',
             action: type === 'Login' ? 'Register' : 'Login',
-            actionMode:  type === 'Login' ? 'Not registered, Login' : 'Not a user, Register',
+            actionMode:  type === 'Login' ? 'All ready registered, Login' : 'Not a user, Register',
         })
     }
 
