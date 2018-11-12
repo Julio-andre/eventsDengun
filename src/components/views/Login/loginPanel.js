@@ -4,7 +4,6 @@ import { StyleSheet, Text, View, Animated, Image } from 'react-native';
 import LoginForm from './loginForm';
 import BackImage from '../../../assets/images/EVENTS.jpg';
 
-
 class LoginPanel extends Component {
 
     state = {
@@ -64,7 +63,6 @@ class LoginPanel extends Component {
                         platform={this.props.platform}
                     />
                 </Animated.View>
-
             </View>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,TouchableOpacity, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
 const BlockItem = (props) => {
 
@@ -7,6 +7,9 @@ const BlockItem = (props) => {
         <View style={styles.itemTextContainer}>
             <Text style={styles.itemTextTitle}>
                 {item.title}
+            </Text>
+            <Text style={styles.itemTextTitle}>
+                {item.location}
             </Text>
             <Text style={styles.itemTextPrice}>
                 $ {item.price}

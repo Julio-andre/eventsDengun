@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Image, Button, Modal } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button, Modal } from 'react-native';
 import { 
   navigatorDrawer,
   getTokens,
@@ -25,8 +25,6 @@ class AddPost extends Component {
 
   state = {
     loading:false,
-    image:[],
-    uploading:false,
     hasErrors:false,
     modalVisible:false,
     modalSuccess:false,
@@ -50,9 +48,9 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:50
+            maxLength:10
           },
-          errorMsg: "You need to enter a title, max of 50 char"
+          errorMsg: "You need to enter a title, max of 10 characters, be descriptive"
         },
         description:{
           value:"",
@@ -63,7 +61,7 @@ class AddPost extends Component {
             isRequired:true,
             maxLength:40
           },
-          errorMsg: "You need to enter a description, max of 40 char"
+          errorMsg: "You need to enter a description, max of 40 characters"
         },
         location:{
           value:"",
@@ -72,9 +70,9 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:10
+            maxLength:20
           },
-          errorMsg: "You need to enter a location, you only have 10 characters"
+          errorMsg: "You need to enter a location, max 20 characters"
         },
         price:{
           value:"",
@@ -83,7 +81,7 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:6
+            maxLength:4
           },
           errorMsg: "You need to enter a price, max of 6"
         },
@@ -97,7 +95,7 @@ class AddPost extends Component {
             isRequired:true,
             isEmail:true
           },
-          errorMsg: "You need to enter an email, make it a valid email"
+          errorMsg: "You need to enter a valid email"
         }
     }
   }

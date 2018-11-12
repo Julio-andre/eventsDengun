@@ -90,7 +90,7 @@ class LoginForm extends Component {
     formHasErrors = () => (
         this.state.hasErrors ? 
             <View style={styles.errorContainer}>
-                <Text style={styles.errorLabel}>Opps, check your info</Text>
+                <Text style={styles.errorLabel}>Email and/or password are wrong!</Text>
             </View>
         :null
     )

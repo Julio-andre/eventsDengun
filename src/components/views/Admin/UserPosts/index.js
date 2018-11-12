@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 
 class UserPosts extends Component {
     static navigatorButtons = {
-        leftButtons: Platform.OS === 'ios'?
+        leftButtons: Platform.OS === 'ios' ?
         [
             {
                 title:'Go back',
@@ -35,7 +35,6 @@ class UserPosts extends Component {
                 }
             })
         }
-        
     }
 
     componentDidMount(){
@@ -118,7 +117,7 @@ class UserPosts extends Component {
                                 <TouchableOpacity
                                     onPress={()=> this.deletePost(this.state.toDelete)}
                                 >
-                                    <Text style={styles.modalDelete}>Yes, Delete it</Text>
+                                    <Text style={styles.modalDelete}>Delete</Text>
                                 </TouchableOpacity>
 
                                 <TouchableOpacity
@@ -129,7 +128,7 @@ class UserPosts extends Component {
                                         })
                                     }}
                                 >
-                                     <Text style={styles.modalClose}>Nop, keep it</Text>
+                                     <Text style={styles.modalClose}>No? keep it</Text>
                                 </TouchableOpacity>
 
                             </View>
@@ -203,7 +202,6 @@ const styles = StyleSheet.create({
 
 
 function mapStateToProps(state){
-    // console.log(state)
     return {
         User:state.User
     }

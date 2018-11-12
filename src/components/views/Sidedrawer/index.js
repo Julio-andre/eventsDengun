@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { connect } from 'react-redux';
-import firebase from 'react-native-firebase';
 
 class SidedrawerComponent extends Component {
 
@@ -79,7 +78,6 @@ class SidedrawerComponent extends Component {
           </View>
         )
     }
-
 
 }
 

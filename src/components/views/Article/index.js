@@ -11,18 +11,13 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Article= (props) => {
-    state = {
-        image: [],
-        uploading: false,
-      };
-    
 
     const articleImage = () => (
         <View style={{position:'relative'}}>
             <Image
                 resizeMode={"cover"}
                 style={styles.articleImage}
-                source={{uri:image}}
+                source={{uri:'https://loremflicker.com/400/400/girl,brazil,dog'}}
             />
             <Text style={styles.priceTag}>
                 € {props.ArticleData.price}
@@ -32,20 +27,14 @@ const Article= (props) => {
 
     const articleText = () => (
         <View>
-            <Text
-                onPress={this._copyToClipboard}
-                onLongPress={this._share}
-                style={{ paddingVertical: 10, paddingHorizontal: 10 }}>
-                {image}
-            </Text>
             <Text style={styles.articleTitle}>
                 {props.ArticleData.title}
             </Text>
-            <Text style={styles.articleDescription}>
-                {props.ArticleData.description}
+            <Text style={styles.articleTitle}>
+                {props.ArticleData.location}
             </Text>
             <Text style={styles.articleDescription}>
-                {props.ArticleData.location}
+                {props.ArticleData.description}
             </Text>
         </View>
     )
@@ -72,18 +61,11 @@ const Article= (props) => {
         &subject=Regarding ${props.ArticleData.title}`)
     }
 
-    const copyToClipboard = () => {
-        Clipboard.setString(this.state.image);
-        alert('Copied image URL to clipboard');
-      };
-
     return (
         <ScrollView style={styles.articleContainer}>
             {articleImage()}
             {articleText()}
             {ownerNfo()}
-            {copyToClipboard()}
-            {share()}
         </ScrollView>
     )
 }

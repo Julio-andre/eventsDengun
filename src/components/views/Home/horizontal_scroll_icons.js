@@ -60,7 +60,6 @@ class HorizontalScrollIcons extends Component {
         :null
     )
 
-
     render(){
         return(
            <ScrollView

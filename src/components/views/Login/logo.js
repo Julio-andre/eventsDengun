@@ -41,14 +41,12 @@ class Logo extends Component {
                             inputRange:[0,1],
                             outputRange:[100,0]
                         })
-                    }}
-                    >
+                    }}>
                         <Text style={styles.den}>DEN</Text>
                     </Animated.View>
                     <Animated.View style={{
                         opacity:this.state.gunAnim
-                    }}
-                    >
+                    }}>
                         <Text style={styles.gun}>GUN</Text>
                     </Animated.View>
 

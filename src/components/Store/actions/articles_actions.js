@@ -26,7 +26,6 @@ export function getArticles(category){
             return articles;
         })
 
-
     return {
         type: GET_ARTICLES,
         payload: request

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Button, ScrollView, ActivityIndicator } from 'react-native';
+import { StyleSheet, View, Text, Button, ScrollView, ActivityIndicator } from 'react-native';
 
 import { 
   getOrientation, 
@@ -82,7 +82,6 @@ class Login extends Component {
                 <Logo
                   showLogin={this.showLogin}
                   orientation={this.state.orientation}
-  
                 />
                 <LoginPanel
                   show={this.state.logoAnimation}

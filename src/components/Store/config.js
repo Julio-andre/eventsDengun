@@ -1,6 +1,6 @@
 import { createStore , compose, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
-import Reducers from './reducers'
+import Reducers from './reducers';
 
 let reduxCompose = compose;
 

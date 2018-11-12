@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Button } from 'react-native';
+import { Styleshhet, Text, View, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Navigation } from 'react-native-navigation';
 
@@ -47,7 +47,6 @@ class NotAllow extends Component {
                     }}
                 /> 
             </View>
-                
 
           </View>
         )

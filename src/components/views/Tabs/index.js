@@ -73,7 +73,6 @@ const LoadTabs = (allow) => {
         })
     })
 
-    
 }
 
 export default LoadTabs;

@@ -38,7 +38,6 @@ export default function(state={},action){
                     refToken:action.payload.refresh_token || false
                 }
             }
-        break;
         case GET_USER_POSTS:
             return {...state, userPosts: action.payload}
         case DELETE_USER_POST:
