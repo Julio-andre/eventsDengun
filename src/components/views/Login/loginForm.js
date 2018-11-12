@@ -97,6 +97,7 @@ class LoginForm extends Component {
 
     manageAccess = () => {
         if(!this.props.User.userData.uid){
+            // console.log("ERROR HERE");
             this.setState({hasErrors:true})
         } else {
             setTokens(this.props.User.userData,()=>{
@@ -122,6 +123,8 @@ class LoginForm extends Component {
                 formToSubmit[key] = formCopy[key].value;
             }
         }
+
+        // console.log("ISVALID : " + isFormValid);
 
         if(isFormValid){
            if(this.state.type === "Login"){

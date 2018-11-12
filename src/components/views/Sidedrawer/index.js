@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { connect } from 'react-redux';
+import firebase from 'react-native-firebase';
 
 class SidedrawerComponent extends Component {
 
@@ -31,14 +32,6 @@ class SidedrawerComponent extends Component {
                 typeLink: "view",
                 index: [],
                 privacy: true
-            },
-            {
-                value: "Logout",
-                iconName: "power-off",
-                shouldGoto: "eventsDengun.loginForm",
-                typeLink: "view",
-                index: [],
-                privacy: true
             }
         ]
     }
@@ -59,15 +52,12 @@ class SidedrawerComponent extends Component {
                         indexLink: button.index
                     }
                 })
-            }}
-        >
+            }}>
             <Text style={styles.buttonText}>
                 {button.value}
             </Text>
         </Icon.Button>
     )
-
-
 
     showButtons = (buttons) =>(
         buttons.map( button => (

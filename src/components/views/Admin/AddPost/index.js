@@ -227,12 +227,12 @@ class AddPost extends Component {
             <View style={{width:'100%'}}>
               <Image
                 resizeMode={"cover"} 
-                source={{uri:this.state.image}}
+                source={uri=this.state.image}
                 style={styles.posterStyle}
                 />
               <Button
                 title="Add your Image"
-                onPress={()=>this.pickImage()}
+                // onPress={()=>this.pickImage()}
               />
             </View>
 

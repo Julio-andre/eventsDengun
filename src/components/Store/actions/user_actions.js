@@ -7,10 +7,11 @@ import {
 } from '../types';
 
 import axios from 'axios';
-import { SIGNUP, SIGNIN ,REFRESH } from '../../utils/misc';
-import { setTokens } from '../../utils/misc'
+import { SIGNUP, SIGNIN ,REFRESH, FIREBASEURL, setTokens } from '../../utils/misc';
 
 export function signIn(data){
+    // console.log('email: ' + data.email);
+    // console.log('password: ' + data.password);
 
     const request = axios({
         method:"POST",
@@ -24,6 +25,7 @@ export function signIn(data){
             "Content-Type":"application/json"
         }
     }).then(response =>{
+        console.log('response: ' + response);
         return response.data
     }).catch(e=>{
         return false
