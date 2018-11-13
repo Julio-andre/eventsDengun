@@ -44,7 +44,7 @@ const Article= (props) => {
             <Text>Contact the owner of this article to the following mail:</Text>
        
             <Icon.Button
-                name="checkbook"
+                name="at"
                 color="#00ADA9"
                 backgroundColor="#ffffff"
                 onPress={()=> openEmail()}

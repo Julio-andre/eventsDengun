@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 import { navigatorDrawer, navigatorDeepLink, gridTwoColumns } from '../../utils/misc';
 import HorizontalScroll from './horizontal_scroll_icons';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import { connect } from 'react-redux';
 import { getArticles } from '../../Store/actions/articles_actions';
@@ -97,7 +97,7 @@ class Home extends Component {
             {
               this.state.isLoading ?
                 <View style={styles.isLoading}>
-                  <Icon name="gears" size={30} color="lightgrey"/>
+                  <Icon name="loading" size={30} color="lightgrey"/>
                   <Text style={{color:'lightgrey'}}>Loading....</Text>
                 </View>
               :null

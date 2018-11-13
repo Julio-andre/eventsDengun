@@ -11,7 +11,6 @@ import { SIGNUP, SIGNIN ,REFRESH, FIREBASEURL } from '../../utils/misc';
 import { setTokens } from '../../utils/misc';
 
 export function signIn(data){
-    console.log(data)
     const request = axios({
         method:"POST",
         url:SIGNIN,
@@ -24,10 +23,8 @@ export function signIn(data){
             "Content-Type":"application/json"
         }
     }).then(response =>{
-        console.log('responsejmnututj' + response.data)
         return response.data
     }).catch(e=>{
-        console.log(e)
         return false
     });
 

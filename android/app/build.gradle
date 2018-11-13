@@ -138,6 +138,11 @@ android {
 }
 
 dependencies {
+    compile project(':rn-fetch-blob')
+    compile project(':react-native-vector-icons')
+    compile project(':react-native-navigation')
+    compile project(':react-native-image-picker')
+    compile project(':react-native-firebase')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-navigation')
     implementation project(':react-native-image-picker')

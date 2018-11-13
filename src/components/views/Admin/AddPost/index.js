@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView, Button, Modal } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button, Modal, Image } from 'react-native';
 import { 
   navigatorDrawer,
   getTokens,
@@ -13,6 +13,8 @@ import { connect } from 'react-redux';
 import { addArticle, resetArticle } from '../../../Store/actions/articles_actions';
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
+
+import ImagePicker from 'react-native-image-picker';
 
 class AddPost extends Component {
   constructor(props){
@@ -52,6 +54,14 @@ class AddPost extends Component {
           },
           errorMsg: "You need to enter a title, max of 50 characters, be descriptive"
         },
+
+        avatar:{
+          value:"",
+          name:"image",
+          valid:true,
+          errorMsg: "Something get Wrong with the Image! "
+        },
+
         description:{
           value:"",
           name:"description",
@@ -214,9 +224,29 @@ class AddPost extends Component {
     return (
         <ScrollView>
           <View style={styles.formInputContainer}>
-
+            
             <View style={{flex:1,alignItems: 'center'}}>
               <Text style={styles.mainTitle}>Post your Events</Text>
+            </View>
+            <View style={{width:'100%'}}>
+              <Image
+                source={''}
+                style={{height:250}}
+                onPress={()=>{
+                  this.selectImage();
+                }}
+              />
+            </View>
+
+            <View>
+              <Text>Please add the title, be descriptive</Text>
+              <Input 
+                  placeholder="Enter a title"
+                  type={this.state.form.title.type}
+                  value={this.state.form.title.value}
+                  onChangeText={ value => this.updateInput("title",value)}
+                  overrideStyle={styles.inputText}
+              />
             </View>
 
             <View style={{flexDirection: 'row',alignItems: 'center'}}>
@@ -236,17 +266,6 @@ class AddPost extends Component {
 
             <View style={{flex:1,alignItems:'center'}}>
               <Text style={styles.secondTitle}>Describe what you are Posting</Text>
-            </View>
-
-            <View>
-              <Text>Please add the title, be descriptive</Text>
-              <Input 
-                  placeholder="Enter a title"
-                  type={this.state.form.title.type}
-                  value={this.state.form.title.value}
-                  onChangeText={ value => this.updateInput("title",value)}
-                  overrideStyle={styles.inputText}
-              />
             </View>
             <View>
               <Input 

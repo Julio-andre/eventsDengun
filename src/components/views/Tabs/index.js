@@ -1,5 +1,5 @@
 import { Navigation } from 'react-native-navigation';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const navStyle = {
     navBarTextFontSize:20,
@@ -22,9 +22,9 @@ const navLeftButton = (sources) => {
 
 const LoadTabs = (allow) => {
     Promise.all([
-        Icon.getImageSource('bars',20,'white'),
-        Icon.getImageSource('connectdevelop',20,'white'),
-        Icon.getImageSource('home',20,'white')
+        Icon.getImageSource('cards-outline',20,'white'),
+        Icon.getImageSource('atom',20,'white'),
+        Icon.getImageSource('chip',20,'white')
     ]).then( sources => {
         Navigation.startTabBasedApp({
             tabs:[
