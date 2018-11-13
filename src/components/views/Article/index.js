@@ -30,11 +30,11 @@ const Article= (props) => {
             <Text style={styles.articleTitle}>
                 {props.ArticleData.title}
             </Text>
-            <Text style={styles.articleTitle}>
-                {props.ArticleData.location}
-            </Text>
             <Text style={styles.articleDescription}>
                 {props.ArticleData.description}
+            </Text>
+            <Text style={styles.articleTitle}>
+                {props.ArticleData.location}
             </Text>
         </View>
     )

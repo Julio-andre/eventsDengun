@@ -48,9 +48,9 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:10
+            maxLength:50
           },
-          errorMsg: "You need to enter a title, max of 10 characters, be descriptive"
+          errorMsg: "You need to enter a title, max of 50 characters, be descriptive"
         },
         description:{
           value:"",
@@ -59,7 +59,7 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:40
+            maxLength:200
           },
           errorMsg: "You need to enter a description, max of 40 characters"
         },
@@ -70,9 +70,9 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:20
+            maxLength:50
           },
-          errorMsg: "You need to enter a location, max 20 characters"
+          errorMsg: "You need to enter a location, max 50 characters, be precise"
         },
         price:{
           value:"",
@@ -81,7 +81,7 @@ class AddPost extends Component {
           type:"textinput",
           rules:{
             isRequired:true,
-            maxLength:4
+            maxLength:6
           },
           errorMsg: "You need to enter a price, max of 6"
         },
@@ -144,6 +144,7 @@ class AddPost extends Component {
           if(expiration > value[2][1]){
             this.props.autoSignIn(value[1][1]).then(()=>{
               setTokens(this.props.User.userData,()=>{
+
                 this.props.addArticle(form,this.props.User.userData.token).then(()=>{
                   this.setState({modalSuccess:true})
                 })
@@ -155,8 +156,6 @@ class AddPost extends Component {
             })
           }
        })
-
-
 
     } else {
       let errorsArray = [];
@@ -175,8 +174,6 @@ class AddPost extends Component {
      })
     }
   }
-
-  
 
   showErrorsArray = (errors) => (
     errors ? 
@@ -219,19 +216,7 @@ class AddPost extends Component {
           <View style={styles.formInputContainer}>
 
             <View style={{flex:1,alignItems: 'center'}}>
-              <Text style={styles.mainTitle}>Post your DenEvents</Text>
-            </View>
-
-            <View style={{width:'100%'}}>
-              <Image
-                resizeMode={"cover"} 
-                source={uri=this.state.image}
-                style={styles.posterStyle}
-                />
-              <Button
-                title="Add your Image"
-                // onPress={()=>this.pickImage()}
-              />
+              <Text style={styles.mainTitle}>Post your Events</Text>
             </View>
 
             <View style={{flexDirection: 'row',alignItems: 'center'}}>

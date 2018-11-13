@@ -185,13 +185,6 @@ class LoginForm extends Component {
                         onPress={this.changeFormType}
                     />
                 </View>
-                <View>
-                    <Button
-                        title="I'll do it later"
-                        color="lightgrey"
-                        onPress={()=> LoadTabs(false)}
-                    />
-                </View>
             </View>
         )
     }

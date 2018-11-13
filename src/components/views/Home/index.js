@@ -63,7 +63,7 @@ class Home extends Component {
       passProps:{
         ArticleData: props
       },
-      backButtonTitle:'Back to home',
+      backButtonTitle:'Go Back',
       navigatorStyle:{
         navBarTextFontSize: 20,
         navBarTextColor: '#ffffff',
