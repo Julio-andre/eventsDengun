@@ -15,6 +15,10 @@ import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
 import ImagePicker from 'react-native-image-picker';
+import RNFetchBlob from 'rn-fetch-blob';
+
+const Blob = RNFetchBlob.polyfill.Blob
+const fs = RNFetchBlob.fs
 
 class AddPost extends Component {
   constructor(props){
@@ -127,7 +131,7 @@ class AddPost extends Component {
     this.setState({
         form:formCopy
     })
-}
+  }
 
   submitFormHandler = () =>{
     let isFormValid = true;
@@ -222,11 +226,60 @@ class AddPost extends Component {
   }
 
   addImage = () => {
-    ImagePicker.showImagePicker(null,response => {
-      alert(response.uri)
-      this.setState({
-        avatar:response.uri
-      })
+    const cam_options = {
+      mediaType: 'photo',
+      maxWidth: 1000,
+      maxHeigth: 1000,
+      quality: 1,
+      noData: true,
+    };
+    ImagePicker.showImagePicker(cam_options,(response) => {
+      if (response.didCancel){
+        alert('Image Canceled')
+      }else if (response.error) {
+        alert('Something Got Wrong')
+      } else {
+        this.uploadImage(response.uri, response.imageName)
+        .then(() =>{
+          fs.readFile(uri)
+          return response.uri
+        })
+        .catch((error) =>{
+          reject(error)
+        })
+        // this.setState({
+        //   avatar:response.uri,
+        //   imagePath: response.uri,
+        //   imageHeight: response.height,
+        //   imageWidth: response.width
+        // })
+      }
+    })
+  }
+
+  uploadImage = (uri, imageName, mime = 'image/jpg') => {
+    return new Promise((resolve, reject) => {
+      const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri
+        let uploadBlob = null
+        const imageRef = firebaseApp.storage().ref('posts').child(imageName)
+        fs.readFile(uploadUri, 'base64')
+        .then((data) => {
+          return Blob.build(data, { type: `${mime};BASE64` })
+        })
+        .then((blob) => {
+          uploadBlob = blob
+          return imageRef.put(blob, { contentType: mime })
+        })
+        .then(() => {
+          uploadBlob.close()
+          return imageRef.getDownloadURL()
+        })
+        .then((url) => {
+          resolve(url)
+        })
+        .catch((error) => {
+          reject(error)
+        })
     })
   }
 
@@ -240,7 +293,7 @@ class AddPost extends Component {
             </View>
             <View style={{width:'100%'}}>
               <Image
-                source={{uri:this.state.avatar}}
+                source={this.state.avatar}
                 style={styles.avatar}
               />
               <Button

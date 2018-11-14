@@ -73,6 +73,12 @@ class UserPosts extends Component {
         posts ?
             posts.map( item => (
                 <View style={styles.itemWrapper} key={item.id}>
+                    <View>
+                        <Image
+                            source={{uri:this.state.avatar}}
+                            style={{width:'100%',height:'200'}}
+                        />
+                    </View>
                     <View style={styles.itemTitle}>
                         <Text style={{
                             fontFamily: 'Roboto-Black'
