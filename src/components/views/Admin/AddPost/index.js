@@ -26,6 +26,7 @@ class AddPost extends Component {
   }
 
   state = {
+    avatar:'',
     loading:false,
     hasErrors:false,
     modalVisible:false,
@@ -220,6 +221,15 @@ class AddPost extends Component {
 
   }
 
+  addImage = () => {
+    ImagePicker.showImagePicker(null,response => {
+      alert(response.uri)
+      this.setState({
+        avatar:response.uri
+      })
+    })
+  }
+
   render() {
     return (
         <ScrollView>
@@ -230,11 +240,12 @@ class AddPost extends Component {
             </View>
             <View style={{width:'100%'}}>
               <Image
-                source={''}
-                style={{height:250}}
-                onPress={()=>{
-                  this.selectImage();
-                }}
+                source={{uri:this.state.avatar}}
+                style={styles.avatar}
+              />
+              <Button
+                title="Add your Image"
+                onPress={()=>this.addImage()}
               />
             </View>
 
@@ -383,7 +394,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     padding:20
   },
-  posterStyle: {
+  avatar: {
+    width:'100%',
     height:180,
     marginTop:16,
 
