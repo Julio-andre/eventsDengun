@@ -1,26 +1,16 @@
 package com.eventsdengun;
 
-import android.app.Application;
-
-import com.facebook.react.ReactApplication;
 import com.RNFetchBlob.RNFetchBlobPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
-import com.reactnativenavigation.NavigationReactPackage;
-import com.imagepicker.ImagePickerPackage;
-import io.invertase.firebase.RNFirebasePackage;
-import com.oblador.vectoricons.VectorIconsPackage;
-import com.reactnativenavigation.NavigationReactPackage;
-import com.imagepicker.ImagePickerPackage;
-import io.invertase.firebase.RNFirebasePackage;
-import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.shell.MainReactPackage;
-import com.facebook.soloader.SoLoader;
+import com.imagepicker.ImagePickerPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationApplication;
-import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 import java.util.Arrays;
 import java.util.List;
+
+import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 public class MainApplication extends NavigationApplication {
 
@@ -57,11 +47,12 @@ public class MainApplication extends NavigationApplication {
       // Add additional packages you require here
       // No need to add RnnPackage and MainReactPackage
       return Arrays.<ReactPackage>asList(
-        new VectorIconsPackage(),
-        new NavigationReactPackage(),
-        new ImagePickerPackage(),
-        new RNFirebasePackage(),
-        new RNFirebaseStoragePackage()
+              new VectorIconsPackage(),
+              new ImagePickerPackage(),
+              new RNFirebasePackage(),
+              new RNFirebaseStoragePackage(),
+              new RNFetchBlobPackage()
+
       );
   }
 

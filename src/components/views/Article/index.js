@@ -12,12 +12,18 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Article= (props) => {
 
+    state = {
+        avatar:'',
+        loading:true,
+        upload:true
+    }
+
     const articleImage = () => (
         <View style={{position:'relative'}}>
             <Image
                 resizeMode={"cover"}
-                style={styles.articleImage}
-                source={{uri:'https://loremflicker.com/400/400/girl,brazil,dog'}}
+                style={styles.articleImageStyle}
+                source={{uri:this.state.avatar}}
             />
             <Text style={styles.priceTag}>
                 € {props.ArticleData.price}
@@ -74,7 +80,7 @@ const styles = StyleSheet.create({
     articleContainer: {
         padding:10
     },
-    articleImage:{
+    articleImageStyle:{
         width:'100%',
         height: 250
     },

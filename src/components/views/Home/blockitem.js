@@ -8,6 +8,9 @@ const BlockItem = (props) => {
             <Text style={styles.itemTextTitle}>
                 {item.title}
             </Text>
+            <Text style={styles.itemTextDescription}>
+                {item.description}
+            </Text>
             <Text style={styles.itemTextTitle}>
                 {item.location}
             </Text>
@@ -93,6 +96,11 @@ const styles = StyleSheet.create({
     itemTextTitle: {
         fontFamily: 'Roboto-Black',
         color:'#4C4C4C',
+        marginBottom: 5
+    },
+    itemTextDescription: {
+        fontFamily: 'Roboto-Black',
+        color: '#000000',
         marginBottom: 5
     },
     itemTextPrice: {

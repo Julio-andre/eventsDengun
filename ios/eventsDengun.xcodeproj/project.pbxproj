@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -50,6 +51,7 @@
 		D1A5571810D14DDEA6A4BFB2 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 954A393F25B2423A978378B3 /* MaterialIcons.ttf */; };
 		DEF75EBFCE3B4B9D9F871421 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B52F871A75924081894D9DCB /* Feather.ttf */; };
 		EF4A34B721959DF80021BC0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF4A348D21959DF80021BC0B /* GoogleService-Info.plist */; };
+		EF4AB201219C7A8500076403 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4AB1FD219C7A4F00076403 /* libRNFetchBlob.a */; };
 		EF676BBA2189BD33002801E7 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF676BB92189BD18002801E7 /* libReactNativeNavigation.a */; };
 		EF676BC42189C174002801E7 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF676BC12189C15C002801E7 /* libRNVectorIcons.a */; };
 		EF676BE72189C2A9002801E7 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF676BC62189C2A4002801E7 /* Roboto-BoldItalic.ttf */; };
@@ -355,6 +357,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
 		};
+		EF4AB1FC219C7A4F00076403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF4AB1D2219C7A4F00076403 /* RNFetchBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A15C300E1CD25C330074CB35;
+			remoteInfo = RNFetchBlob;
+		};
 		EF676BB82189BD18002801E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF676B8F2189BD18002801E7 /* ReactNativeNavigation.xcodeproj */;
@@ -422,6 +431,7 @@
 		CB6CC34CDDA24F70A0C5F1D5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		D52018E6DFC6D3F573C26B10 /* Pods-eventsDengun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventsDengun.release.xcconfig"; path = "Pods/Target Support Files/Pods-eventsDengun/Pods-eventsDengun.release.xcconfig"; sourceTree = "<group>"; };
 		EF4A348D21959DF80021BC0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "eventsDengun/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF4AB1D2219C7A4F00076403 /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFetchBlob.xcodeproj; path = "../node_modules/rn-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; };
 		EF676B8F2189BD18002801E7 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		EF676BBB2189C15C002801E7 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		EF676BC62189C2A4002801E7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../assets/Fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -458,6 +468,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4AB201219C7A8500076403 /* libRNFetchBlob.a in Frameworks */,
 				EF676C432189D768002801E7 /* libRNImagePicker.a in Frameworks */,
 				EF676BC42189C174002801E7 /* libRNVectorIcons.a in Frameworks */,
 				EF676BBA2189BD33002801E7 /* libReactNativeNavigation.a in Frameworks */,
@@ -669,6 +680,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EF4AB1D2219C7A4F00076403 /* RNFetchBlob.xcodeproj */,
 				EF676C3D2189D752002801E7 /* RNImagePicker.xcodeproj */,
 				EF676BBB2189C15C002801E7 /* RNVectorIcons.xcodeproj */,
 				EF676B8F2189BD18002801E7 /* ReactNativeNavigation.xcodeproj */,
@@ -774,6 +786,14 @@
 			isa = PBXGroup;
 			children = (
 				EF10998E2194B98A0049BF12 /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4AB1D3219C7A4F00076403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4AB1FD219C7A4F00076403 /* libRNFetchBlob.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -969,6 +989,10 @@
 				{
 					ProductGroup = EF676B902189BD18002801E7 /* Products */;
 					ProjectRef = EF676B8F2189BD18002801E7 /* ReactNativeNavigation.xcodeproj */;
+				},
+				{
+					ProductGroup = EF4AB1D3219C7A4F00076403 /* Products */;
+					ProjectRef = EF4AB1D2219C7A4F00076403 /* RNFetchBlob.xcodeproj */;
 				},
 				{
 					ProductGroup = EF10998A2194B98A0049BF12 /* Products */;
@@ -1258,6 +1282,13 @@
 			fileType = archive.ar;
 			path = libRNFirebase.a;
 			remoteRef = EF10998D2194B98A0049BF12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF4AB1FD219C7A4F00076403 /* libRNFetchBlob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFetchBlob.a;
+			remoteRef = EF4AB1FC219C7A4F00076403 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		EF676BB92189BD18002801E7 /* libReactNativeNavigation.a */ = {

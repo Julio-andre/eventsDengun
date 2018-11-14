@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity, Modal } from 'react-native';
+import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity, Modal, Image } from 'react-native';
 
 import { connect } from 'react-redux';
 import { getUserPosts, deleteUserpost } from '../../../Store/actions/user_actions';
@@ -21,6 +21,7 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
+            avatar:'',
             posts:[],
             modal:false
         }
