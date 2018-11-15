@@ -75,14 +75,14 @@ class Home extends Component {
   }
 
   showArticles = () => (
-      this.state.articles.map( (item,i ) => (
-        <BlockItem
-          key={`columnHome-${i}`}
-          item={item}
-          iteration={i}
-          goto={this.goToArticleHandler}
-        />
-      ))
+    this.state.articles.map( (item,i ) => (
+      <BlockItem
+        key={`columnHome-${i}`}
+        item={item}
+        iteration={i}
+        goto={this.goToArticleHandler}
+      />
+    ))
   )
 
   render() {
