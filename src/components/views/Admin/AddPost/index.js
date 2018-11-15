@@ -32,6 +32,7 @@ class AddPost extends Component {
 
   state = {
     loading:false,
+    imageloading:false,
     hasErrors:false,
     modalVisible:false,
     modalSuccess:false,
@@ -227,56 +228,61 @@ class AddPost extends Component {
   }
 
   addImage = () => {
-    const uploadImage = (uri, imageName, mime = 'image/jpg') => {
-      return new Promise((resolve, reject) => {
-        const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri
-        console.log("uploadUri: ". uploadUri);
-        
-          let uploadBlob = null
-          const imageRef = firebaseApp.storage().ref('posts').child(imageName)
-          fs.readFile(uploadUri, 'base64')
-          .then((data) => {
-            return Blob.build(data, { type: `${mime};BASE64` })
-          })
-          .then((blob) => {
-            uploadBlob = blob
-            return imageRef.put(blob, { contentType: mime })
-          })
-          .then(() => {
-            uploadBlob.close()
-            return imageRef.getDownloadURL()
-          })
-          .then((url) => {
-            resolve(url)
-          })
-          .catch((error) => {
-            reject(error)
-          })
-      })
-    };
     ImagePicker.showImagePicker(uploadImage,(response) => {
       console.log('response: ' + response)
-      if (response.didCancel){
-        alert('Image Canceled')
-      }else if (response.error) {
-        alert('Something Got Wrong')
+      
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+        props.setState({ imageLoading: false });
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+        props.setState({ imageLoading: false });
+      } else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+        props.setState({ imageLoading: false });
       } else {
-        this.uploadImage(response.uri, response.imageName)
-        .then(() =>{
-          return this.response.avatar.uri
-        }).then(()=>{
-          if(post.featured_image != undefined) {
-            var imageHttps = post.featured_image.replace(/^http:\/\//i, 'https://');
-        } else {
-          fetch (error);
-        }
-        })
-        .catch((error) =>{
-          console.log(error);
-          throw new error()
-        })
+        const source = {
+          uri: response.uri,
+          type: response.type,
+        };
+        console.log('source: ', source);
+        props.setState({
+          [imageProp]: source,
+          imageLoading: false,
+        });
       }
-    })
+    });
+  }
+
+  uploadImage(props, uri, mime, imageRef, resolveAction, imageProp) {
+    return new Promise((resolve, reject) => {
+      const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri.uri;
+      let uploadBlob = null;
+  
+      fs.readFile(uploadUri, 'base64')
+      .then((data) => {
+        return Blob.build(data, { type: '${mime};BASE64' });
+      })
+      .then((blob) => {
+        uploadBlob = blob;
+        return imageRef.put(uploadUri, { contentType: mime });
+      })
+      .then(() => {
+        uploadBlob.close();
+        return imageRef.getDownloadURL();
+      })
+      .then((url) => {
+        console.log('theimageurl: ', url);
+        resolve(url);
+        if (resolveAction != null) { resolveAction(); }
+      })
+      .catch((error) => {
+        reject(error);
+      });
+      props.setState({
+        [imageProp]: null,
+      });
+    });
   }
 
   render() {
