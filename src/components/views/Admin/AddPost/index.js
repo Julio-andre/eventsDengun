@@ -273,7 +273,7 @@ class AddPost extends Component {
         })
         .catch((error) =>{
           console.log(error);
-          
+          throw new error()
         })
       }
     })
