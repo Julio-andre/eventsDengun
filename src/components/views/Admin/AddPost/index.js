@@ -16,7 +16,7 @@ import { bindActionCreators } from 'redux';
 
 import ImagePicker from 'react-native-image-picker';
 import RNFetchBlob from 'rn-fetch-blob';
-import firebaseApp from 'react-native-firebase';
+import firebase from 'react-native-firebase';
 
 const Blob = RNFetchBlob.polyfill.Blob
 const fs = RNFetchBlob.fs
@@ -32,7 +32,7 @@ class AddPost extends Component {
 
   state = {
     loading:false,
-    imageloading:false,
+    imageLoading:false,
     hasErrors:false,
     modalVisible:false,
     modalSuccess:false,
@@ -227,10 +227,14 @@ class AddPost extends Component {
 
   }
 
-  addImage = () => {
-    ImagePicker.showImagePicker(uploadImage,(response) => {
-      console.log('response: ' + response)
-      
+  addImage = (props, imageProp) => {
+    console.log('onPickImage');
+    const options = {
+      title: strings.selectPhoto,
+    };
+    props.setState({ imageLoading: true });
+      ImagePicker.showImagePicker(options,(response) =>{
+        console.log('Response = ', response);
       if (response.didCancel) {
         console.log('User cancelled image picker');
         props.setState({ imageLoading: false });
@@ -283,6 +287,70 @@ class AddPost extends Component {
         [imageProp]: null,
       });
     });
+  }
+
+  onSubmitReaction() {
+    console.log("onsubmitreaction ", this.state.message);
+    if (this.state.message.trim() === "" && !this.state.imageSource) {
+      return null;
+    }
+    const { state } = this.props.navigation;
+
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+      this.setState({
+        isLoading: true
+      });
+
+      // User is signed in.
+      var postData = {
+        date: new Date(),
+        text: this.state.message,
+        user: user.uid
+      };
+      const path = FirebaseRefs.DBREACTIONSREF + state.params.topic.key + "/";
+      const newKey = FirebaseCreateEntry(path, postData);
+      console.log("newKey: ", newKey);
+      if (this.state.imageSource) {
+        this.uploadImagekey(newKey);
+      } else {
+        this.updateList();
+      }
+    } else {
+      console.log("No user is signed in.");
+      this.setState({
+        isLoading: true
+      });
+      this.props.navigation.dispatch(resetToLogin);
+      //Todo show alert and reload Login
+    }
+  }
+
+  uploadImagekey(newKey) {
+    const { state } = this.props.navigation;
+    let uri = this.state.imageSource;
+    let mime = uri.type;
+    var user = firebase.auth().currentUser;
+    //double newKey reference or it doesnt create the directory on firebase
+    let path =
+      user.uid +
+      FirebaseRefs.STORAGEREACTIONSREF +
+      state.params.topic.key +
+      "/" +
+      newKey +
+      "/" +
+      newKey +
+      "/";
+    const imageRef = FirebaseGetImageRef(path);
+    uploadImagekey(
+      this,
+      uri,
+      mime,
+      imageRef,
+      this.updateList.bind(this),
+      "imageSource"
+    );
   }
 
   render() {
