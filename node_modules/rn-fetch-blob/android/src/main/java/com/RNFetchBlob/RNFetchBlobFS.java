@@ -490,8 +490,7 @@ class RNFetchBlobFS {
      */
     static void unlink(String path, Callback callback) {
         try {
-            String normalizedPath = normalizePath(path);
-            RNFetchBlobFS.deleteRecursive(new File(normalizedPath));
+            RNFetchBlobFS.deleteRecursive(new File(path));
             callback.invoke(null, true);
         } catch(Exception err) {
             callback.invoke(err.getLocalizedMessage(), false);

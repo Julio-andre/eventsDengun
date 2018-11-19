@@ -7,7 +7,7 @@ import {
 } from '../types';
 
 import axios from 'axios';
-import { SIGNUP, SIGNIN ,REFRESH, FIREBASEURL } from '../../utils/misc';
+import { SIGNIN, SIGNUP, REFRESH, firebaseConfig } from '../../utils/misc';
 import { setTokens } from '../../utils/misc';
 
 export function signIn(data){
@@ -84,7 +84,7 @@ export const autoSignIn = (refToken) => {
 
 export function getUserPosts(UID){
 
-    const request = axios(`${FIREBASEURL}/articles.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
+    const request = axios(`${firebaseConfig.databaseURL}/articles.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
     .then( response => {
         let articles = [];
 
@@ -105,11 +105,11 @@ export function getUserPosts(UID){
 export const deleteUserpost = (POSTID, USERDATA) => {
 
     const promise = new Promise((resolve,reject)=>{
-        const URL = `${FIREBASEURL}/articles/${POSTID}.json`
+        const URL = `${firebaseConfig.databaseURL}/articles/${POSTID}.json`
 
         const request = axios({
             method:'DELETE',
-            url: `${URL}?auth=${USERDATA.token}s`
+            url: `${URL}?auth=${USERDATA.token}`
         }).then( response => {
             resolve({deletePost:true})
         }).catch(e => {

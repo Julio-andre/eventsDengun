@@ -13,7 +13,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const Article= (props) => {
 
     state = {
-        avatar:'',
+        itemImage:null,
         loading:true,
         upload:true
     }
@@ -23,7 +23,7 @@ const Article= (props) => {
             <Image
                 resizeMode={"cover"}
                 style={styles.articleImageStyle}
-                source={{uri:this.state.avatar}}
+                source={{uri:this.state.itemImage}}
             />
             <Text style={styles.priceTag}>
                 € {props.ArticleData.price}

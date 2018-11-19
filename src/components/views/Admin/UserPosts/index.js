@@ -21,7 +21,7 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
-            avatar:'',
+            image:'',
             posts:[],
             modal:false
         }
@@ -76,8 +76,8 @@ class UserPosts extends Component {
                 <View style={styles.itemWrapper} key={item.id}>
                     <View>
                         <Image
-                            source={{uri:this.state.avatar}}
-                            style={{width:'100%',height:'200'}}
+                            source={{uri:this.state.itemImage}}
+                            style={{width:'100%',height:200}}
                         />
                     </View>
                     <View style={styles.itemTitle}>

@@ -5,10 +5,10 @@ import {
 } from '../types';
 
 import axios from 'axios';
-import { FIREBASEURL } from '../../utils/misc';
+import { firebaseConfig } from '../../utils/misc';
 
 export function getArticles(category){
-    let URL = `${FIREBASEURL}/articles.json`;
+    let URL = `${firebaseConfig.databaseURL}/articles.json`;
     if(category !== 'All'){
         URL = `${URL}/?orderBy=\"category\"&equalTo=\"${category}\"`
     }
@@ -36,7 +36,7 @@ export function addArticle(data,token){
 
     const request = axios({
         method:'POST',
-        url:`${FIREBASEURL}/articles.json?auth=${token}`,
+        url:`${firebaseConfig.databaseURL}/articles.json?auth=${token}`,
         data
     }).then( response => {
         return response.data

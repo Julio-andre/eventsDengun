@@ -4,14 +4,18 @@ import {
     AsyncStorage
 } from 'react-native';
 
-export const FIREBASEURL = `https://eventsdengun.firebaseio.com`;
-export const APIKEY = `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`;
-export const storageBucket = `https://eventsdengun.appspot.com`;
-export const messagingSenderId = '119427405309';
+export const firebaseConfig = {
+    APIKEY: `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`,
+    authDomain: 'eventsdengun.firebaseapp.com',
+    databaseURL: `https://eventsdengun.firebaseio.com`,
+    storage: `eventsdengun.appspot.com`,
+    projectId: 'eventsdengun',
+    messagingSenderId: '119427405309',
+};    
+export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${firebaseConfig.APIKEY}`;
+export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${firebaseConfig.APIKEY}`;
+export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${firebaseConfig.APIKEY}`;
 
-export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${APIKEY}`;
-export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${APIKEY}`;
-export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY}`;
 
 export const getOrientation = (value) =>{
     return Dimensions.get("window").height > value ? "portrait" : "landscape" 

@@ -3,6 +3,11 @@ import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
 const BlockItem = (props) => {
 
+    state = {
+        itemImage:null,
+        loading:true
+    }
+
     const itemText = (item) => (
         <View style={styles.itemTextContainer}>
             <Text style={styles.itemTextTitle}>
@@ -21,12 +26,13 @@ const BlockItem = (props) => {
     )
 
 
+    //remember to get the uri from, form.image.value.getDownloadUrl() 
     const itemImage = () => (
         <View>
             <Image
                 resizeMode={"cover"}
-                style={styles.itemImage}
-                source={{uri:'https://loremflickr.com/400/400/girl,brazil,dog'}}
+                style={styles.itemImageStyle}
+                source={{uri:""}}
             />
         </View>
     )
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         justifyContent: 'space-between'
     },
-    itemImage:{
+    itemImageStyle:{
         width:'100%',
         height:200,
     },

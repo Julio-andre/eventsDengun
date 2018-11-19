@@ -36,7 +36,7 @@
     "react-redux": "5.0.7",
     "redux": "3.7.2",
     "redux-promise": "0.5.3",
-    "rn-fetch-blob": "github:joltup/rn-fetch-blob#master",
+    "rn-fetch-blob": "^0.10.13",
     "uuid": "^3.3.2"
   }
 }

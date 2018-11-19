@@ -1,6 +1,5 @@
 package com.eventsdengun;
 
-import com.RNFetchBlob.RNFetchBlobPackage;
 import com.facebook.react.ReactPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
