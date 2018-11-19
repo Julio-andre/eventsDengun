@@ -31,7 +31,6 @@ const BlockItem = (props) => {
         </View>
     )
 
-
     const block = ({item,i}) => (
         <View style={styles.blockRow}>
             <TouchableOpacity
