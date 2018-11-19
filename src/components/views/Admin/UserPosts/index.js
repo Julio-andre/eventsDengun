@@ -28,8 +28,8 @@ class UserPosts extends Component {
 
 
         if(Platform.OS === 'ios'){
-            this.props.navigator.setOnNavigatorEvent((event)=>{
-                if(event.id === 'goBack'){
+            this.props.navigator.setOnNavigatorEvent((evento)=>{
+                if(evento.id === 'goBack'){
                     this.props.navigator.dismissAllModals({
                         animationType:'slide-down'
                     })

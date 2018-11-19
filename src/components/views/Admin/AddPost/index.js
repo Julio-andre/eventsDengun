@@ -32,8 +32,8 @@ class AddPost extends Component {
 
     // this.getImageURI= this.form.image.value.getDownloadURL(this);
     // this.selectElement = this.form.image.value.getDownloadURL(this);
-    this.props.navigator.setOnNavigatorEvent((event) => {
-      navigatorDrawer(event, this)
+    this.props.navigator.setOnNavigatorEvent((evento) => {
+      navigatorDrawer(evento, this)
     })
   }
 
@@ -229,7 +229,7 @@ class AddPost extends Component {
     })
   }
 
-  resetDenEventScreen = () => {
+  resetDenEventoScreen = () => {
     const formCopy = this.state.form;
 
     for (let key in formCopy) {
@@ -498,7 +498,7 @@ class AddPost extends Component {
               <Button
                 title="go back home"
                 onPress={() => {
-                  this.resetDenEventScreen();
+                  this.resetDenEventoScreen();
                   this.props.navigator.switchToTab({
                     tabIndex: 0
                   })

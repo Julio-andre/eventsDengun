@@ -9,9 +9,9 @@ export default function(state={},action){
         case GET_EVENTOS:
             return {...state, list:action.payload}
         case ADD_EVENTO:
-            return {...state, newEvento:action.payload}
+            return {...state, newEventos:action.payload}
         case RESET_EVENTO:
-            return {...state, newEvento:action.payload }
+            return {...state, newEventos:action.payload }
         default:
             return state;
     }

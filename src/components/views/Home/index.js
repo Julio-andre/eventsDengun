@@ -22,9 +22,9 @@ class Home extends Component {
       categorySelected:"All"
     }
 
-    this.props.navigator.setOnNavigatorEvent((event)=>{
-      navigatorDeepLink(event,this)
-      navigatorDrawer(event,this)
+    this.props.navigator.setOnNavigatorEvent((evento)=>{
+      navigatorDeepLink(evento,this)
+      navigatorDrawer(evento,this)
     })
   }
 
@@ -36,22 +36,22 @@ class Home extends Component {
     });
 
     this.props.getEventos(value).then(()=>{
-      const newEvento = gridTwoColumns(this.props.Eventos.list)
+      const newEventos = gridTwoColumns(this.props.Eventos.list)
 
       this.setState({
         isLoading: false,
-        eventos: newEvento
+        eventos: newEventos
       })
     })
   }
 
   componentDidMount(){
     this.props.getEventos('All').then(()=>{
-      const newEvento = gridTwoColumns(this.props.Eventos.list)
+      const newEventos = gridTwoColumns(this.props.Eventos.list)
 
       this.setState({
         isLoading: false,
-        eventos: newEvento
+        eventos: newEventos
       })
     })
   }

@@ -37,8 +37,8 @@ export const getPlatform = () => {
     }
 }
 
-export const navigatorDrawer = (event, $this) => {
-    if(event.type === "NavBarButtonPress" && event.id === "DrawerButton"){
+export const navigatorDrawer = (evento, $this) => {
+    if(evento.type === "NavBarButtonPress" && evento.id === "DrawerButton"){
         $this.props.navigator.toggleDrawer({
             side: 'left',
             animated: true
@@ -46,20 +46,20 @@ export const navigatorDrawer = (event, $this) => {
     }
 }
 
-export const navigatorDeepLink = (event, $this) =>{
-    if(event.type === 'DeepLink'){
+export const navigatorDeepLink = (evento, $this) =>{
+    if(evento.type === 'DeepLink'){
         $this.props.navigator.toggleDrawer({
             side: 'left',
             animated: true
         });
 
-        if(event.payload.typeLink === 'tab'){
+        if(evento.payload.typeLink === 'tab'){
             $this.props.navigator.switchToTab({
-                tabIndex: event.payload.indexLink
+                tabIndex: evento.payload.indexLink
             });
         } else {
             $this.props.navigator.showModal({
-                screen: event.link,
+                screen: evento.link,
                 animationType:'slide-horizontal',
                 navigatorStyle:{
                     navBarBackgroundColor: '#00ADA9',
@@ -97,7 +97,7 @@ export const setTokens = (values,cb) => {
 }
 
 export const gridTwoColumns = (list) => {
-    let newEvento = [];
+    let newEventos = [];
     let eventos = list;
 
     let count = 1;
@@ -110,12 +110,12 @@ export const gridTwoColumns = (list) => {
                 count++;
             } else {
                 vessel["blockTwo"] = element;
-                newEvento.push(vessel);
+                newEventos.push(vessel);
 
                 count = 1;
                 vessel = {};
             }
         })
     }
-    return newEvento;
+    return newEventos;
 }
