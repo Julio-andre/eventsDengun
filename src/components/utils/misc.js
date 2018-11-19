@@ -97,25 +97,25 @@ export const setTokens = (values,cb) => {
 }
 
 export const gridTwoColumns = (list) => {
-    let newArticles = [];
-    let articles = list;
+    let newEvento = [];
+    let eventos = list;
 
     let count = 1;
     let vessel = {};
 
-    if(articles){
-        articles.forEach( element =>{
+    if(eventos){
+        eventos.forEach( element =>{
             if(count == 1){
                 vessel["blockOne"] = element;
                 count++;
             } else {
                 vessel["blockTwo"] = element;
-                newArticles.push(vessel);
+                newEvento.push(vessel);
 
                 count = 1;
                 vessel = {};
             }
         })
     }
-    return newArticles;
+    return newEvento;
 }

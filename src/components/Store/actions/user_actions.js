@@ -84,17 +84,17 @@ export const autoSignIn = (refToken) => {
 
 export function getUserPosts(UID){
 
-    const request = axios(`${firebaseConfig.databaseURL}/articles.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
+    const request = axios(`${firebaseConfig.databaseURL}/eventos.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
     .then( response => {
-        let articles = [];
+        let eventos = [];
 
         for(let key in response.data){
-            articles.push({
+            eventos.push({
                 ...response.data[key],
                 id: key
             })
         }
-        return articles
+        return eventos
     })
     return {
         type: GET_USER_POSTS,
@@ -105,7 +105,7 @@ export function getUserPosts(UID){
 export const deleteUserpost = (POSTID, USERDATA) => {
 
     const promise = new Promise((resolve,reject)=>{
-        const URL = `${firebaseConfig.databaseURL}/articles/${POSTID}.json`
+        const URL = `${firebaseConfig.databaseURL}/eventos/${POSTID}.json`
 
         const request = axios({
             method:'DELETE',

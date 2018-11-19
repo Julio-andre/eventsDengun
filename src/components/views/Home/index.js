@@ -6,7 +6,7 @@ import HorizontalScroll from './horizontal_scroll_icons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import { connect } from 'react-redux';
-import { getArticles } from '../../Store/actions/articles_actions';
+import { getEventos } from '../../Store/actions/eventos_actions';
 import { bindActionCreators } from 'redux';
 
 import BlockItem from './blockitem';
@@ -17,7 +17,7 @@ class Home extends Component {
 
     this.state = {
       isLoading:true,
-      articles:[],
+      eventos:[],
       categories:['All','Startup','Software','Electronics','Conference','Social','Charity'],
       categorySelected:"All"
     }
@@ -32,36 +32,36 @@ class Home extends Component {
     this.setState({
       isLoading:true,
       categorySelected:value,
-      articles:[]
+      eventos:[]
     });
 
-    this.props.getArticles(value).then(()=>{
-      const newArticles = gridTwoColumns(this.props.Articles.list)
+    this.props.getEventos(value).then(()=>{
+      const newEvento = gridTwoColumns(this.props.Eventos.list)
 
       this.setState({
         isLoading: false,
-        articles: newArticles
+        eventos: newEvento
       })
     })
   }
 
   componentDidMount(){
-    this.props.getArticles('All').then(()=>{
-      const newArticles = gridTwoColumns(this.props.Articles.list)
+    this.props.getEventos('All').then(()=>{
+      const newEvento = gridTwoColumns(this.props.Eventos.list)
 
       this.setState({
         isLoading: false,
-        articles: newArticles
+        eventos: newEvento
       })
     })
   }
 
-  goToArticleHandler = (props) =>{
+  goToEventoHandler = (props) =>{
     this.props.navigator.push({
-      screen:"eventsDengun.Article",
+      screen:"eventsDengun.Evento",
       animationType:"slide-horizontal",
       passProps:{
-        ArticleData: props
+        EventoData: props
       },
       backButtonTitle:'Go Back',
       navigatorStyle:{
@@ -74,13 +74,13 @@ class Home extends Component {
     })
   }
 
-  showArticles = () => (
-    this.state.articles.map( (item,i ) => (
+  showEventos = () => (
+    this.state.eventos.map( (item,i ) => (
       <BlockItem
         key={`columnHome-${i}`}
         item={item}
         iteration={i}
-        goto={this.goToArticleHandler}
+        goto={this.goToEventoHandler}
       />
     ))
   )
@@ -102,9 +102,9 @@ class Home extends Component {
                 </View>
               :null
             }
-            <View style={styles.articleContainer}>
+            <View style={styles.eventoContainer}>
               <View style={{flex:1}}>
-                {this.showArticles()}
+                {this.showEventos()}
               </View>
             </View>
 
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 50
   },
-  articleContainer:{
+  eventoContainer:{
     padding:10,
     flex:1,
     flexDirection: 'row',
@@ -133,12 +133,12 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state){
   return {
-    Articles: state.Articles
+    Eventos: state.Eventos
   }
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({getArticles},dispatch)
+  return bindActionCreators({getEventos},dispatch)
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home)

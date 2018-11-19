@@ -13,7 +13,7 @@ import Input from '../../../utils/forms/inputs';
 import ValidationRules from '../../../utils/forms/validationRules';
 
 import { connect } from 'react-redux';
-import { addArticle, resetArticle } from '../../../Store/actions/articles_actions';
+import { addEvento, resetEvento } from '../../../Store/actions/eventos_actions';
 import { autoSignIn } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
 
@@ -182,13 +182,13 @@ class AddPost extends Component {
           this.props.autoSignIn(value[1][1]).then(() => {
             setTokens(this.props.User.userData, () => {
 
-              this.props.addArticle(form, this.props.User.userData.token).then(() => {
+              this.props.addEvento(form, this.props.User.userData.token).then(() => {
                 this.setState({ modalSuccess: true })
               })
             })
           })
         } else {
-          this.props.addArticle(form, value[0][1]).then(() => {
+          this.props.addEvento(form, value[0][1]).then(() => {
             this.setState({ modalSuccess: true })
           })
         }
@@ -244,7 +244,7 @@ class AddPost extends Component {
       loading: false
     })
 
-    this.props.resetArticle();
+    this.props.resetEvento();
 
   }
 
@@ -560,13 +560,13 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
-    Articles: state.Articles,
+    Eventos: state.Eventos,
     User: state.User
   }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ addArticle, autoSignIn, resetArticle }, dispatch)
+  return bindActionCreators({ addEvento, autoSignIn, resetEvento }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddPost)

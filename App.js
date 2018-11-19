@@ -8,7 +8,7 @@ import AddPost from './src/components/views/Admin/AddPost';
 import NotAllow from './src/components/views/Admin/AddPost/notallow';
 import SidedrawerComponenent from './src/components/views/Sidedrawer';
 import UserPosts from './src/components/views/Admin/UserPosts';
-import Article from './src/components/views/Article';
+import Evento from './src/components/views/Evento';
 
 const store = ConfigureStore();
 
@@ -49,9 +49,9 @@ Navigation.registerComponent(
   Provider
 );
 Navigation.registerComponent(
-  "eventsDengun.Article",
+  "eventsDengun.Evento",
   ()=>
-  Article,
+  Evento,
   store,
   Provider
 );

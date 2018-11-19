@@ -17,7 +17,7 @@ class SidedrawerComponent extends Component {
                 privacy: false
             },
             {
-                value: "Events",
+                value: "Eventos",
                 iconName: "atom",
                 shouldGoto: "eventsDengun.AddPost",
                 typeLink: "tab",
