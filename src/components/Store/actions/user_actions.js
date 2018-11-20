@@ -95,6 +95,10 @@ export function getUserPosts(UID){
         }
         return eventos
     })
+    .catch(e=>{
+        console.log(e)
+        return false
+    });
     return {
         type: GET_USER_POSTS,
         payload: request

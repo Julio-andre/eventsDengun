@@ -85,9 +85,9 @@ class AddPost extends Component {
         type: "textinput",
         rules: {
           isRequired: true,
-          maxLength: '100%'
+          maxLength: 250
         },
-        errorMsg: "You need to enter a description, max of 40 characters"
+        errorMsg: "You need to enter a description, max of 250 characters"
       },
       location: {
         value: "",
@@ -158,14 +158,12 @@ class AddPost extends Component {
     let dataToSubmit = {};
     const formCopy = this.state.form;
 
-    var user = firebase.auth().currentUser;
-
     for (let key in formCopy) {
       isFormValid = isFormValid && formCopy[key].valid;
       dataToSubmit[key] = this.state.form[key].value;
     }
 
-    if (isFormValid, user) {
+    if (isFormValid) {
       this.setState({
         loading: true
       });
@@ -266,10 +264,16 @@ class AddPost extends Component {
         };
         this.setState({ localImageSource: source.uri });
 
-        // this.uploadImage(source).then((url) => {
-        //   console.log("setting state...")
-        //   this.setState({ imageSource: url });
-        // })
+        this.uploadImage(source).then((url) => {
+          console.log("setting state...")
+          let formCopy = this.state.form;
+          formCopy[image].value = url;
+
+          this.setState({ 
+            imageSource: url, 
+            form:formCopy 
+          });
+        })
       }
     });
   }

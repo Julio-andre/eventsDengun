@@ -21,7 +21,7 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
-            bucketImage:null,
+            itemImage:null,
             posts:[],
             modal:false
         }
@@ -41,7 +41,7 @@ class UserPosts extends Component {
     componentDidMount(){
         const UID = this.props.User.userData.uid;
         this.props.getUserPosts(UID);
-        this.props.getBucketImage(UID);
+        // this.props.getItemImage(UID);
     }
 
     componentWillReceiveProps(nextProps){
@@ -77,7 +77,7 @@ class UserPosts extends Component {
                 <View style={styles.itemWrapper} key={item.id}>
                     <View>
                         <Image
-                            source={{ uri: this.state.bucketImage}}
+                            source={{ uri: this.state.itemImage}}
                             style={{width:'100%',height:200}}
                         />
                     </View>

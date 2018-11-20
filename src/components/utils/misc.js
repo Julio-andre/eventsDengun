@@ -6,9 +6,8 @@ import {
 
 export const firebaseConfig = {
     APIKEY: `AIzaSyAi_cuwoPAKc7lrCWn06jhrRHbUkw3Ydjo`,
-    authDomain: 'eventsdengun.firebaseapp.com',
     databaseURL: `https://eventsdengun.firebaseio.com`,
-    storage: `eventsdengun.appspot.com`,
+    storage: `gs://eventsdengun.appspot.com`,
     projectId: 'eventsdengun',
     messagingSenderId: '119427405309',
 };    
