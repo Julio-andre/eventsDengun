@@ -9,7 +9,6 @@ import {
 import axios from 'axios';
 import { SIGNIN, SIGNUP, REFRESH, firebaseConfig } from '../../utils/misc';
 import { setTokens } from '../../utils/misc';
-import console = require('console');
 
 export function signIn(data){
     const request = axios({
@@ -86,15 +85,20 @@ export const autoSignIn = (refToken) => {
 export function getUserPosts(UID){
     const request = axios(`${firebaseConfig.databaseURL}/eventos.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
     .then( response => {
+        console.log("response: " + response)
         let eventos = [];
 
         for(let key in response.data){
+            console.log("RESPONSE: " + response.data);
             eventos.push({
                 ...response.data[key],
                 id: key
             })
         }
         return eventos
+    })
+    .catch(error=> {
+        console.log("ERROR: " + error);
     })
     return {
         type: GET_USER_POSTS,
