@@ -9,6 +9,7 @@ import {
 import axios from 'axios';
 import { SIGNIN, SIGNUP, REFRESH, firebaseConfig } from '../../utils/misc';
 import { setTokens } from '../../utils/misc';
+import console = require('console');
 
 export function signIn(data){
     const request = axios({
@@ -95,10 +96,6 @@ export function getUserPosts(UID){
         }
         return eventos
     })
-    .catch(e=>{
-        console.log(e)
-        return false
-    });
     return {
         type: GET_USER_POSTS,
         payload: request

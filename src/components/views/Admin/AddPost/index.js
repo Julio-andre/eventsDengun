@@ -85,9 +85,9 @@ class AddPost extends Component {
         type: "textinput",
         rules: {
           isRequired: true,
-          maxLength: 250
+          maxLength: 40
         },
-        errorMsg: "You need to enter a description, max of 250 characters"
+        errorMsg: "You need to enter a description, max of 40 characters"
       },
       location: {
         value: "",
@@ -264,16 +264,10 @@ class AddPost extends Component {
         };
         this.setState({ localImageSource: source.uri });
 
-        this.uploadImage(source).then((url) => {
-          console.log("setting state...")
-          let formCopy = this.state.form;
-          formCopy[image].value = url;
-
-          this.setState({ 
-            imageSource: url, 
-            form:formCopy 
-          });
-        })
+        // this.uploadImage(source).then((url) => {
+        //   console.log("setting state...")
+        //   this.setState({ imageSource: url });
+        // })
       }
     });
   }
@@ -281,7 +275,7 @@ class AddPost extends Component {
        //=============================================================================//
       //=============================================================================//
      //================================= ITS HERE ==================================//
-    //========================== IMAGE REFERENCE AND UPLOAD =======================//
+    //==========================IMAGE REFERENCE AND HOW TO UPLOAD==================//
    //=============================================================================//
   //=============================================================================//
 
@@ -351,17 +345,36 @@ class AddPost extends Component {
     );
   }
 
-  getImage() {
-    console.log('Attempting to get imageSource: ' + this.state.imageSource);
-    if (this.state.imageSource == null) {
-      console.log("imageSource was not available, aborting...");
-      return;
-    }
-    return (
-      <Image
-        style={styles.imageStyle}
-        source={{ uri: this.state.imageSource }} />
-    );
+  pickImage = () => {
+    console.log('onPickImage');
+    this.setState({ imageLoading: true });
+    ImagePicker.showImagePicker(null, (response) => {
+      console.log('Response = ', response);
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+        this.setState({ imageLoading: false });
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+        this.setState({ imageLoading: false });
+      } else {
+        const source = {
+          uri: response.uri,
+          type: response.type,
+        };
+        this.setState({ localImageSource: source.uri });
+
+        this.uploadImage(source).then((url) => {
+          console.log("setting state...")
+          let formCopy = this.state.form;
+          formCopy[image].value = url;
+
+          this.setState({ 
+            imageSource: url, 
+            form:formCopy, 
+          });
+        })
+      }
+    });
   }
 
   render() {

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 const BlockItem = (props) => {
 
     state = {
-        itemImage:null,
+        bucketImage:null,
         loading:true
     }
 
@@ -27,12 +27,12 @@ const BlockItem = (props) => {
 
 
     //remember to get the uri from, form.image.value.getDownloadUrl() 
-    const itemImage = () => (
+    const bucketImage = () => (
         <View>
             <Image
                 resizeMode={"cover"}
-                style={styles.imageStyle}
-                source={{uri:this.state.itemImage}}
+                style={styles.bucketImageStyle}
+                source={{uri:""}}
             />
         </View>
     )
@@ -51,7 +51,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleLeft
                     ]}
                 >
-                    {itemImage()}
+                    {bucketImage()}
                     {itemText(item.blockOne)}
                 </View>
             </TouchableOpacity>
@@ -67,7 +67,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleRight
                     ]}
                 >
-                    {itemImage()}
+                    {bucketImage()}
                     {itemText(item.blockTwo)}
                 </View>
             </TouchableOpacity>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         justifyContent: 'space-between'
     },
-    imageStyle:{
+    bucketImageStyle:{
         width:'100%',
         height:200,
     },
