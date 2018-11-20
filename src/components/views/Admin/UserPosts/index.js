@@ -21,15 +21,15 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
-            image:'',
+            bucketImage:null,
             posts:[],
             modal:false
         }
 
 
         if(Platform.OS === 'ios'){
-            this.props.navigator.setOnNavigatorEvent((evento)=>{
-                if(evento.id === 'goBack'){
+            this.props.navigator.setOnNavigatorEvent((event)=>{
+                if(event.id === 'goBack'){
                     this.props.navigator.dismissAllModals({
                         animationType:'slide-down'
                     })
@@ -41,6 +41,7 @@ class UserPosts extends Component {
     componentDidMount(){
         const UID = this.props.User.userData.uid;
         this.props.getUserPosts(UID);
+        this.props.getBucketImage(UID);
     }
 
     componentWillReceiveProps(nextProps){
@@ -71,12 +72,12 @@ class UserPosts extends Component {
     }
 
     showPosts = (posts) => (
-        posts ?
+        posts.length > 0 ?
             posts.map( item => (
                 <View style={styles.itemWrapper} key={item.id}>
                     <View>
                         <Image
-                            source={{uri:this.state.itemImage}}
+                            source={{ uri: this.state.bucketImage}}
                             style={{width:'100%',height:200}}
                         />
                     </View>
@@ -150,6 +151,7 @@ class UserPosts extends Component {
     )
 
     render(){
+        console.log("POSTS: ", this.state.posts)
         return(
            <ScrollView>
                <View style={styles.container}>

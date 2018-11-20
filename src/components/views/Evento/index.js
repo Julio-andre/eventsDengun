@@ -13,17 +13,17 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const Evento= (props) => {
 
     state = {
-        itemImage:null,
+        bucketImage:null,
         loading:true,
         upload:true
     }
 
-    const eventoImage = () => (
+    const bucketImage = () => (
         <View style={{position:'relative'}}>
             <Image
                 resizeMode={"cover"}
-                style={styles.eventoImageStyle}
-                source={{uri:this.state.itemImage}}
+                style={styles.bucketImageStyle}
+                source={{uri:this.state.bucketImage}}
             />
             <Text style={styles.priceTag}>
                 € {props.EventoData.price}
@@ -69,7 +69,7 @@ const Evento= (props) => {
 
     return (
         <ScrollView style={styles.eventoContainer}>
-            {eventoImage()}
+            {bucketImage()}
             {eventoText()}
             {ownerNfo()}
         </ScrollView>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     eventoContainer: {
         padding:10
     },
-    eventoImageStyle:{
+    bucketImageStyle:{
         width:'100%',
         height: 250
     },

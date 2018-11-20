@@ -83,7 +83,6 @@ export const autoSignIn = (refToken) => {
 }
 
 export function getUserPosts(UID){
-
     const request = axios(`${firebaseConfig.databaseURL}/eventos.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
     .then( response => {
         let eventos = [];

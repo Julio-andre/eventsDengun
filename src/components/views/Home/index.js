@@ -22,9 +22,9 @@ class Home extends Component {
       categorySelected:"All"
     }
 
-    this.props.navigator.setOnNavigatorEvent((evento)=>{
-      navigatorDeepLink(evento,this)
-      navigatorDrawer(evento,this)
+    this.props.navigator.setOnNavigatorEvent((event)=>{
+      navigatorDeepLink(event,this)
+      navigatorDrawer(event,this)
     })
   }
 

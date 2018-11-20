@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>457E4B8D-36A8-4258-AB6B-124463084C95</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>457E4B8D-36A8-4258-AB6B-124463084C95.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>eventsDengun project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>eventsDengun</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>564400466.60720003</real>
+			<key>timeStoppedRecording</key>
+			<real>564400471.33250499</real>
+			<key>title</key>
+			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>457E4B8D-36A8-4258-AB6B-124463084C95</string>
+		</dict>
 		<key>823378AD-98C1-4E1A-B0D4-C478E48D0B82</key>
 		<dict>
 			<key>className</key>
@@ -34,35 +63,6 @@
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>823378AD-98C1-4E1A-B0D4-C478E48D0B82</string>
-		</dict>
-		<key>8D849FAE-DD89-4E64-9298-18DA8448C743</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8D849FAE-DD89-4E64-9298-18DA8448C743.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>eventsDengun project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>eventsDengun</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>564341092.02195501</real>
-			<key>timeStoppedRecording</key>
-			<real>564341107.05579305</real>
-			<key>title</key>
-			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>8D849FAE-DD89-4E64-9298-18DA8448C743</string>
 		</dict>
 	</dict>
 </dict>

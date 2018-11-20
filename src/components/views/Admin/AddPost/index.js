@@ -32,8 +32,8 @@ class AddPost extends Component {
 
     // this.getImageURI= this.form.image.value.getDownloadURL(this);
     // this.selectElement = this.form.image.value.getDownloadURL(this);
-    this.props.navigator.setOnNavigatorEvent((evento) => {
-      navigatorDrawer(evento, this)
+    this.props.navigator.setOnNavigatorEvent((event) => {
+      navigatorDrawer(event, this)
     })
   }
 
@@ -277,7 +277,7 @@ class AddPost extends Component {
        //=============================================================================//
       //=============================================================================//
      //================================= ITS HERE ==================================//
-    //==========================IMAGE REFERENCE AND HOW TO UPLOAD==================//
+    //========================== IMAGE REFERENCE AND UPLOAD =======================//
    //=============================================================================//
   //=============================================================================//
 

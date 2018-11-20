@@ -16,7 +16,6 @@ export const SIGNUP = `https://www.googleapis.com/identitytoolkit/v3/relyingpart
 export const SIGNIN = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${firebaseConfig.APIKEY}`;
 export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${firebaseConfig.APIKEY}`;
 
-
 export const getOrientation = (value) =>{
     return Dimensions.get("window").height > value ? "portrait" : "landscape" 
 }
@@ -37,8 +36,8 @@ export const getPlatform = () => {
     }
 }
 
-export const navigatorDrawer = (evento, $this) => {
-    if(evento.type === "NavBarButtonPress" && evento.id === "DrawerButton"){
+export const navigatorDrawer = (event, $this) => {
+    if(event.type === "NavBarButtonPress" && event.id === "DrawerButton"){
         $this.props.navigator.toggleDrawer({
             side: 'left',
             animated: true
@@ -46,20 +45,20 @@ export const navigatorDrawer = (evento, $this) => {
     }
 }
 
-export const navigatorDeepLink = (evento, $this) =>{
-    if(evento.type === 'DeepLink'){
+export const navigatorDeepLink = (event, $this) =>{
+    if(event.type === 'DeepLink'){
         $this.props.navigator.toggleDrawer({
             side: 'left',
             animated: true
         });
 
-        if(evento.payload.typeLink === 'tab'){
+        if(event.payload.typeLink === 'tab'){
             $this.props.navigator.switchToTab({
-                tabIndex: evento.payload.indexLink
+                tabIndex: event.payload.indexLink
             });
         } else {
             $this.props.navigator.showModal({
-                screen: evento.link,
+                screen: event.link,
                 animationType:'slide-horizontal',
                 navigatorStyle:{
                     navBarBackgroundColor: '#00ADA9',

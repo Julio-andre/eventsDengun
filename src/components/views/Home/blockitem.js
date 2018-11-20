@@ -27,11 +27,11 @@ const BlockItem = (props) => {
 
 
     //remember to get the uri from, form.image.value.getDownloadUrl() 
-    const itemImage = () => (
+    const bucketImage = () => (
         <View>
             <Image
                 resizeMode={"cover"}
-                style={styles.itemImageStyle}
+                style={styles.bucketImageStyle}
                 source={{uri:""}}
             />
         </View>
@@ -51,7 +51,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleLeft
                     ]}
                 >
-                    {itemImage()}
+                    {bucketImage()}
                     {itemText(item.blockOne)}
                 </View>
             </TouchableOpacity>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         justifyContent: 'space-between'
     },
-    itemImageStyle:{
+    bucketImageStyle:{
         width:'100%',
         height:200,
     },

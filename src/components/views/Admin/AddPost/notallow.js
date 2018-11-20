@@ -9,8 +9,8 @@ class NotAllow extends Component {
     constructor(props){
         super(props);
 
-        this.props.navigator.setOnNavigatorEvent((evento)=>{
-            navigatorDrawer(evento, this)
+        this.props.navigator.setOnNavigatorEvent((event)=>{
+            navigatorDrawer(event, this)
         })
     }
 
