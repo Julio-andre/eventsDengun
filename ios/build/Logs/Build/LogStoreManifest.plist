@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>457E4B8D-36A8-4258-AB6B-124463084C95</key>
+		<key>08CA8409-0900-4085-ADDA-19EB51449ADE</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>457E4B8D-36A8-4258-AB6B-124463084C95.xcactivitylog</string>
+			<string>08CA8409-0900-4085-ADDA-19EB51449ADE.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>564400466.60720003</real>
+			<real>564420859.78557098</real>
 			<key>timeStoppedRecording</key>
-			<real>564400471.33250499</real>
+			<real>564420864.65521204</real>
 			<key>title</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>457E4B8D-36A8-4258-AB6B-124463084C95</string>
+			<string>08CA8409-0900-4085-ADDA-19EB51449ADE</string>
 		</dict>
-		<key>CBA54ABF-B401-4B2F-8CB6-C25122E88EF1</key>
+		<key>FB8EF587-A711-4B55-83C7-153B040C3AF8</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>CBA54ABF-B401-4B2F-8CB6-C25122E88EF1.xcactivitylog</string>
+			<string>FB8EF587-A711-4B55-83C7-153B040C3AF8.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,13 +56,13 @@
 			<key>signature</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>564413370.22781098</real>
+			<real>564421126.30023098</real>
 			<key>timeStoppedRecording</key>
-			<real>564413375.307863</real>
+			<real>564421130.01817501</real>
 			<key>title</key>
 			<string>Building workspace eventsDengun with scheme eventsDengun and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>CBA54ABF-B401-4B2F-8CB6-C25122E88EF1</string>
+			<string>FB8EF587-A711-4B55-83C7-153B040C3AF8</string>
 		</dict>
 	</dict>
 </dict>
