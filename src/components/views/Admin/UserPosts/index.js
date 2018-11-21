@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Platform, ScrollView, TouchableOpacity, Modal, 
 import { connect } from 'react-redux';
 import { getUserPosts, deleteUserpost } from '../../../Store/actions/user_actions';
 import { bindActionCreators } from 'redux';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class UserPosts extends Component {
     static navigatorButtons = {
@@ -21,7 +22,8 @@ class UserPosts extends Component {
         super(props);
 
         this.state = {
-            bucketImage:null,
+            isLoading:false,
+            imageSource:null,
             posts:[],
             modal:false
         }
@@ -73,9 +75,20 @@ class UserPosts extends Component {
         posts.length > 0 ?
             posts.map( item => (
                 <View style={styles.itemWrapper} key={item.id}>
-                    <View>
+                
+                    <View style={styles.imageStyle}>
+                    {
+                        this.state.isLoading ?
+                            <View style={styles.isLoading}>
+                                <Icon name="loading" size={30} color="lightgrey"/>
+                                <Text style={{color:'lightgrey'}}>Loading....</Text>
+                            </View>
+                        :null
+                    }
                         <Image
-                            source={{ uri: this.state.bucketImage}}
+                            style={styles.imageStyle}
+                            resizeMode={"cover"}
+                            source={{ uri: item.image }}
                         />
                     </View>
                     <View style={styles.itemTitle}>
@@ -155,7 +168,7 @@ class UserPosts extends Component {
                     <View style={{
                         marginBottom:30
                     }}>
-                        <Text>You have {this.state.posts.length} posts</Text>
+                        <Text>You have {this.state.posts.length}</Text>
                     </View>
 
                     {this.showPosts(this.state.posts)}
@@ -176,6 +189,10 @@ const styles = StyleSheet.create({
         borderColor: '#ececec',
         borderRadius: 2,
         marginBottom:20
+    },
+    imageStyle:{
+        width:'100%',
+        height:200
     },
     itemTitle: {
         borderBottomWidth: 1,
@@ -203,6 +220,11 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 20,
         color:'#00ADA9'
+    },
+    isLoading:{
+        flex:1,
+        alignItems:'center',
+        marginTop: 50
     }
 })
 

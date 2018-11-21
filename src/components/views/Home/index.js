@@ -16,7 +16,7 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      isLoading:true,
+      isLoading:false,
       eventos:[],
       categories:['All','Startup','Software','Electronics','Conference','Social','Charity'],
       categorySelected:"All"
@@ -35,21 +35,19 @@ class Home extends Component {
       eventos:[]
     });
 
-    this.props.getEventos(value).then(()=>{
-      const newEventos = gridTwoColumns(this.props.Eventos.list)
-
-      this.setState({
-        isLoading: false,
-        eventos: newEventos
-      })
-    })
+   this.getEvents(value)
   }
 
   componentDidMount(){
-    this.props.getEventos('All').then(()=>{
+    this.getEvents('All')
+  }
+
+  getEvents = (category) => {
+    this.props.getEventos(category).then(()=>{
+
       const newEventos = gridTwoColumns(this.props.Eventos.list)
 
-      console.log("EVENTS", newEventos)
+      console.log("NEW EVENTOS", newEventos)
 
       this.setState({
         isLoading: false,
@@ -77,6 +75,7 @@ class Home extends Component {
   }
 
   showEventos = () => (
+        
     this.state.eventos.map( (item,i ) => (
 
       <BlockItem
@@ -116,6 +115,7 @@ class Home extends Component {
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   container:{

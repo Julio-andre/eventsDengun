@@ -103,6 +103,9 @@ export const gridTwoColumns = (list) => {
 
     if(eventos){
         eventos.forEach( element =>{
+
+            console.log(element);
+
             if(count == 1){
                 vessel["blockOne"] = element;
                 count++;

@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 class SidedrawerComponent extends Component {
 
     state = {
+        isLoading:false,
         buttons:[
             {
                 value: "Home",
@@ -73,12 +74,19 @@ class SidedrawerComponent extends Component {
         return(
           <View style={styles.container}>
             <View style={styles.buttonContainer}>
+                {
+                    !this.state.isLoading ?
+                    <View style={styles.isLoading}>
+                        <Icon name="loading" size={30} color="lightgrey"/>
+                        <Text style={{color:'lightgrey'}}>Loading....</Text>
+                    </View>
+                    : null
+                }
                 {this.showButtons(this.state.buttons)}
             </View>
           </View>
         )
     }
-
 }
 
 const styles = StyleSheet.create({
@@ -94,6 +102,11 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto-Regular',
         fontSize: 13,
         color:'#ffffff'
+    },
+    isLoading:{
+        flex:1,
+        alignItems: 'center',
+        marginTop:50
     }
 })
 

@@ -20,6 +20,7 @@ import { bindActionCreators } from 'redux';
 import ImagePicker from 'react-native-image-picker';
 import RNFetchBlob from 'rn-fetch-blob';
 import firebase from 'react-native-firebase';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 console.disableYellowBox = true;
 
@@ -40,9 +41,7 @@ class AddPost extends Component {
   state = {
     imageSource: null,
     localImageSource:null,
-    uploading: false,
-    loading: false,
-    imageLoading: false,
+    isLoading: false,
     hasErrors: false,
     modalVisible: false,
     modalSuccess: false,
@@ -85,9 +84,9 @@ class AddPost extends Component {
         type: "textinput",
         rules: {
           isRequired: true,
-          maxLength: 40
+          maxLength: 250
         },
-        errorMsg: "You need to enter a description, max of 40 characters"
+        errorMsg: "You need to enter a description, max of 250 characters"
       },
       location: {
         value: "",
@@ -166,7 +165,7 @@ class AddPost extends Component {
 
     if (isFormValid) {
       this.setState({
-        loading: true
+        isLoading: true
       });
 
       getTokens((value) => {
@@ -203,7 +202,7 @@ class AddPost extends Component {
       }
 
       this.setState({
-        loading: false,
+        isLoading: true,
         upload: true,
         hasErrors: true,
         modalVisible: true,
@@ -240,7 +239,7 @@ class AddPost extends Component {
       modalSuccess: false,
       hasErrors: false,
       errorsArray: [],
-      loading: false
+      isLoading: false
     })
 
     this.props.resetEvento();
@@ -249,15 +248,15 @@ class AddPost extends Component {
 
   pickImage = () => {
     console.log('onPickImage');
-    this.setState({ imageLoading: true });
+    this.setState({ isLoading: true });
     ImagePicker.showImagePicker(null, (response) => {
       console.log('Response = ', response);
       if (response.didCancel) {
         console.log('User cancelled image picker');
-        this.setState({ imageLoading: false });
+        this.setState({ isLoading: false });
       } else if (response.error) {
         console.log('ImagePicker Error: ', response.error);
-        this.setState({ imageLoading: false });
+        this.setState({ isLoading: false });
       } else {
         const source = {
           uri: response.uri,
@@ -320,7 +319,7 @@ class AddPost extends Component {
 
   handlePickedImage = pickerResult => {
     try {
-      this.setState({ uploading: true });
+      this.setState({ isLoading: true });
 
       if (!pickerResult.cancelled) {
         uploadUrl = awaituploadImage(pickerResult.uri);
@@ -330,7 +329,7 @@ class AddPost extends Component {
       console.log(e);
       alert('Upload failed, sorry : (');
     } finally {
-      this.setState({ uploading: false });
+      this.setState({ isLoading: false });
     }
   };
 
@@ -349,15 +348,15 @@ class AddPost extends Component {
 
   pickImage = () => {
     console.log('onPickImage');
-    this.setState({ imageLoading: true });
+    this.setState({ isLoading: true });
     ImagePicker.showImagePicker(null, (response) => {
       console.log('Response = ', response);
       if (response.didCancel) {
         console.log('User cancelled image picker');
-        this.setState({ imageLoading: false });
+        this.setState({ isLoading: false });
       } else if (response.error) {
         console.log('ImagePicker Error: ', response.error);
-        this.setState({ imageLoading: false });
+        this.setState({ isLoading: false });
       } else {
         const source = {
           uri: response.uri,
@@ -389,11 +388,14 @@ class AddPost extends Component {
           </View>
           <View style={styles.imgWrap}>
             {this.getImageLocal(this.state.localImageSource)}
+            
+            <StatusBar barStyle="default" />
+
             <Button
               title="Add your Image"
               onPress={() => this.pickImage()}
             />
-            <StatusBar barStyle="default" />
+            
           </View>
 
           <View>
@@ -468,8 +470,6 @@ class AddPost extends Component {
             <Text style={styles.secondTitle}>Add your contact data</Text>
           </View>
 
-
-
           <View>
             <Text>Please enter the email where users can contact you</Text>
             <Input
@@ -481,17 +481,12 @@ class AddPost extends Component {
               autoCapitalize={"none"}
               keyboardType={"email-address"}
             />
+            <Button
+                  title="Submit event"
+                  onPress={this.submitFormHandler}
+                />
           </View>
-
-          {
-            !this.state.loading ?
-              <Button
-                title="Submit event"
-                onPress={this.submitFormHandler}
-              />
-              : null
-          }
-
+            
           <Modal
             animationType="slide"
             visible={this.state.modalVisible}

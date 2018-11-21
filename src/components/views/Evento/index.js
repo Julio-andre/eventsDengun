@@ -10,12 +10,12 @@ import {
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const Evento= (props) => {
+const Evento = (props) => {
 
     state = {
         imageSource:null,
-        loading:true,
-        upload:true
+        isLoading:false,
+        upload:false
     }
 
     const imageSource = () => (
@@ -23,7 +23,7 @@ const Evento= (props) => {
             <Image
                 resizeMode={"cover"}
                 style={styles.imageStyle}
-                source={{uri:this.state.imageSource}}
+                source={{uri:props.EventoData.image}}
             />
             <Text style={styles.priceTag}>
                 € {props.EventoData.price}
@@ -69,6 +69,14 @@ const Evento= (props) => {
 
     return (
         <ScrollView style={styles.eventoContainer}>
+            {
+              this.state.isLoading ?
+                <View style={styles.isLoading}>
+                  <Icon name="loading" size={30} color="lightgrey"/>
+                  <Text style={{color:'lightgrey'}}>Loading....</Text>
+                </View>
+              :null
+            }
             {imageSource()}
             {eventoText()}
             {ownerNfo()}
@@ -108,6 +116,11 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         borderTopWidth:1,
         borderTopColor:'lightgrey'
+    },
+    isLoading:{
+        flex:1,
+        alignItems:'center',
+        marginTop:50
     }
 
  })
