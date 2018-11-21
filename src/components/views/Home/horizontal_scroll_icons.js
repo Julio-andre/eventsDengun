@@ -30,7 +30,6 @@ const categoriesIcons = (value) => {
         default:
             name = ''
     }
-
     return name;
 }
 
