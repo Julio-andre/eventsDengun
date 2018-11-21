@@ -26,7 +26,6 @@ class UserPosts extends Component {
             modal:false
         }
 
-
         if(Platform.OS === 'ios'){
             this.props.navigator.setOnNavigatorEvent((event)=>{
                 if(event.id === 'goBack'){
@@ -77,7 +76,6 @@ class UserPosts extends Component {
                     <View>
                         <Image
                             source={{ uri: this.state.bucketImage}}
-                            style={{width:'100%',height:200}}
                         />
                     </View>
                     <View style={styles.itemTitle}>

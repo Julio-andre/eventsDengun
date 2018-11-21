@@ -52,7 +52,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleLeft
                     ]}
                 >
-                    { bucketImage(item.blockOne.image) }
+                    {bucketImage(item.blockOne.image)}
                     {itemText(item.blockOne)}
                 </View>
             </TouchableOpacity>
@@ -74,7 +74,6 @@ const BlockItem = (props) => {
             </TouchableOpacity>
         </View>
     )
-
 
     return (
        <View>

@@ -82,19 +82,6 @@ export const autoSignIn = (refToken) => {
 
 }
 
-function getBucketImage() {
-    console.log('Attempting to get localImageSource: ' + this.state.bucketImage);
-    if (this.state.bucketImage == null) {
-      console.log("localImageSource was not available, aborting...");
-      return;
-    }
-    return (
-      <Image
-        style={styles.imageStyle}
-        source={{ uri: this.state.bucketImage }} />
-    );
-  }
-
 export function getUserPosts(UID){
     const request = axios(`${firebaseConfig.databaseURL}/eventos.json?orderBy=\"uid\"&equalTo=\"${UID}\"`)
     .then( response => {
