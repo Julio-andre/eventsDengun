@@ -161,6 +161,7 @@ class AddPost extends Component {
     for (let key in formCopy) {
       isFormValid = isFormValid && formCopy[key].valid;
       dataToSubmit[key] = this.state.form[key].value;
+      console.log(dataToSubmit)
     }
 
     if (isFormValid) {
@@ -304,6 +305,7 @@ class AddPost extends Component {
         .then((url) => {
           console.log('The Image URL: ', url);
           console.log("resolving...")
+          this.state.form.image.value = url;
           resolve(url);
         })
         .catch((error) => {

@@ -9,6 +9,7 @@ const BlockItem = (props) => {
     }
 
     const itemText = (item) => (
+
         <View style={styles.itemTextContainer}>
             <Text style={styles.itemTextTitle}>
                 {item.title}
@@ -24,16 +25,16 @@ const BlockItem = (props) => {
             </Text>
         </View>
     )
-
-
+   
     //remember to get the uri from, form.image.value.getDownloadUrl() 
-    const bucketImage = () => (
+    const bucketImage = (url) => (
+        
         <View>
-            <Image
+             <Image
                 resizeMode={"cover"}
                 style={styles.bucketImageStyle}
-                source={{uri:""}}
-            />
+                source={{uri: url}}
+                /> 
         </View>
     )
 
@@ -51,7 +52,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleLeft
                     ]}
                 >
-                    {bucketImage()}
+                    { bucketImage(item.blockOne.image) }
                     {itemText(item.blockOne)}
                 </View>
             </TouchableOpacity>
@@ -67,7 +68,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleRight
                     ]}
                 >
-                    {bucketImage()}
+                    {bucketImage(item.blockTwo.image)}
                     {itemText(item.blockTwo)}
                 </View>
             </TouchableOpacity>

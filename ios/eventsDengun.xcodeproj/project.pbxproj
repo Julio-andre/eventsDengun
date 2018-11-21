@@ -50,6 +50,7 @@
 		D1A5571810D14DDEA6A4BFB2 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 954A393F25B2423A978378B3 /* MaterialIcons.ttf */; };
 		D2B46BC5FEE97AF99182C8EE /* Pods_eventsDengun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600CFC4B1C7C78B6CE875FEF /* Pods_eventsDengun.framework */; };
 		DEF75EBFCE3B4B9D9F871421 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B52F871A75924081894D9DCB /* Feather.ttf */; };
+		EF1C48D821A56663000CB89F /* libfishhook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6841FA4F8DC00B85C8A /* libfishhook.a */; };
 		EF4A34B721959DF80021BC0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF4A348D21959DF80021BC0B /* GoogleService-Info.plist */; };
 		EF676BBA2189BD33002801E7 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF676BB92189BD18002801E7 /* libReactNativeNavigation.a */; };
 		EF676BC42189C174002801E7 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF676BC12189C15C002801E7 /* libRNVectorIcons.a */; };
@@ -468,6 +469,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1C48D821A56663000CB89F /* libfishhook.a in Frameworks */,
 				EFCA5718219DEE3700F4E7E9 /* libRNFetchBlob.a in Frameworks */,
 				EF676C432189D768002801E7 /* libRNImagePicker.a in Frameworks */,
 				EF676BC42189C174002801E7 /* libRNVectorIcons.a in Frameworks */,

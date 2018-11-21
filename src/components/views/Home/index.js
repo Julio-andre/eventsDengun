@@ -49,6 +49,8 @@ class Home extends Component {
     this.props.getEventos('All').then(()=>{
       const newEventos = gridTwoColumns(this.props.Eventos.list)
 
+      console.log("EVENTS", newEventos)
+
       this.setState({
         isLoading: false,
         eventos: newEventos
@@ -76,6 +78,7 @@ class Home extends Component {
 
   showEventos = () => (
     this.state.eventos.map( (item,i ) => (
+
       <BlockItem
         key={`columnHome-${i}`}
         item={item}
