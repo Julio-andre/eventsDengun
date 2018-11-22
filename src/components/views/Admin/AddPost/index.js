@@ -152,7 +152,7 @@ class AddPost extends Component {
   //=====================================================================================// 
 
   submitFormHandler = () => {
-    console.log("FormHandler: " + this.state.message)
+    //console.log("FormHandler: " + this.state.message)
     let isFormValid = true;
     let dataToSubmit = {};
     const formCopy = this.state.form;
@@ -160,7 +160,7 @@ class AddPost extends Component {
     for (let key in formCopy) {
       isFormValid = isFormValid && formCopy[key].valid;
       dataToSubmit[key] = this.state.form[key].value;
-      console.log(dataToSubmit)
+      //console.log(dataToSubmit)
     }
 
     if (isFormValid) {
@@ -247,15 +247,15 @@ class AddPost extends Component {
   }
 
   pickImage = () => {
-    console.log('onPickImage');
+    //console.log('onPickImage');
     this.setState({ isLoading: true });
     ImagePicker.showImagePicker(null, (response) => {
-      console.log('Response = ', response);
+      //console.log('Response = ', response);
       if (response.didCancel) {
-        console.log('User cancelled image picker');
+        //console.log('User cancelled image picker');
         this.setState({ isLoading: false });
       } else if (response.error) {
-        console.log('ImagePicker Error: ', response.error);
+        //console.log('ImagePicker Error: ', response.error);
         this.setState({ isLoading: false });
       } else {
         const source = {
@@ -280,7 +280,7 @@ class AddPost extends Component {
   //=============================================================================//
 
   uploadImage(imageSource) {
-    console.log("starting upload image...");
+    //console.log("starting upload image...");
     return new Promise((resolve, reject) => {
       const uploadUri = Platform.OS === 'ios' ? imageSource.uri.replace('file://', '') : imageSource.uri;
       let uploadBlob = null;
@@ -288,27 +288,27 @@ class AddPost extends Component {
       const imageRef = firebase.storage().ref('images/').child(imageSource.uri)
       fs.readFile(uploadUri, 'base64')
         .then((data) => {
-          console.log("building blob...");
+          //console.log("building blob...");
           return Blob.build(data, { type: '${mime};BASE64' });
         })
         .then((blob) => {
           uploadBlob = blob;
-          console.log("uploading blob...");
+          //console.log("uploading blob...");
           return imageRef.put(uploadUri, { contentType: imageSource.type });
         })
         .then(() => {
           uploadBlob.close();
-          console.log("getting blob downloadUrl...");
+          //console.log("getting blob downloadUrl...");
           return imageRef.getDownloadURL();
         })
         .then((url) => {
-          console.log('The Image URL: ', url);
-          console.log("resolving...")
+          //console.log('The Image URL: ', url);
+          //console.log("resolving...")
           this.state.form.image.value = url;
           resolve(url);
         })
         .catch((error) => {
-          console.log("rejecting promise..." + error);
+          //console.log("rejecting promise..." + error);
           reject(error)
         });
       // this.handlePickedImage(pickerResult);
@@ -326,7 +326,7 @@ class AddPost extends Component {
         this.setState({ image: uploadUrl });
       }
     } catch (e) {
-      console.log(e);
+      //console.log(e);
       alert('Upload failed, sorry : (');
     } finally {
       this.setState({ isLoading: false });
@@ -334,9 +334,9 @@ class AddPost extends Component {
   };
 
   getImageLocal() {
-    console.log('Attempting to get localImageSource: ' + this.state.localImageSource);
+    //console.log('Attempting to get localImageSource: ' + this.state.localImageSource);
     if (this.state.localImageSource == null) {
-      console.log("localImageSource was not available, aborting...");
+      //console.log("localImageSource was not available, aborting...");
       return;
     }
     return (
@@ -347,15 +347,15 @@ class AddPost extends Component {
   }
 
   pickImage = () => {
-    console.log('onPickImage');
+    //console.log('onPickImage');
     this.setState({ isLoading: true });
     ImagePicker.showImagePicker(null, (response) => {
-      console.log('Response = ', response);
+      //console.log('Response = ', response);
       if (response.didCancel) {
-        console.log('User cancelled image picker');
+        //console.log('User cancelled image picker');
         this.setState({ isLoading: false });
       } else if (response.error) {
-        console.log('ImagePicker Error: ', response.error);
+        //console.log('ImagePicker Error: ', response.error);
         this.setState({ isLoading: false });
       } else {
         const source = {
@@ -365,7 +365,7 @@ class AddPost extends Component {
         this.setState({ localImageSource: source.uri });
 
         this.uploadImage(source).then((url) => {
-          console.log("setting state...")
+          //console.log("setting state...")
           let formCopy = this.state.form;
           formCopy[image].value = url;
 

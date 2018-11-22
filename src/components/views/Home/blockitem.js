@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
 const BlockItem = (props) => {
-
+    //console.log("props: ", props);
     state = {
         imageSource:null,
         loading:true
@@ -25,9 +25,9 @@ const BlockItem = (props) => {
             </Text>
         </View>
     )
-   
+  
     //DONE! Get the uri from, form.image.value
-    const imageSource = (item) => (
+    const itemImage = (item) => (
         
         <View>
              <Image
@@ -52,7 +52,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleLeft
                     ]}
                 >
-                    {imageSource(item.blockOne.image)}
+                    {itemImage(item.blockOne)}
                     {itemText(item.blockOne)}
                 </View>
             </TouchableOpacity>
@@ -68,7 +68,7 @@ const BlockItem = (props) => {
                         styles.blockGridStyleRight
                     ]}
                 >
-                    {imageSource(item.blockTwo.image)}
+                    {itemImage(item.blockTwo)}
                     {itemText(item.blockTwo)}
                 </View>
             </TouchableOpacity>
@@ -76,6 +76,7 @@ const BlockItem = (props) => {
     )
 
     return (
+        
        <View>
            {block(props)}
        </View>

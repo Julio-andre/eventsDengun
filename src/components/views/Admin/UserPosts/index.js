@@ -161,7 +161,7 @@ class UserPosts extends Component {
     )
 
     render(){
-        console.log("POSTS: ", this.state.posts)
+        //console.log("POSTS: ", this.state.posts)
         return(
            <ScrollView>
                <View style={styles.container}>

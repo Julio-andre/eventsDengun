@@ -17,7 +17,7 @@ const Evento = (props) => {
         isLoading:false,
         upload:false
     }
-
+    //console.log("Image: ", props.EventoData.image)
     const imageSource = () => (
         <View style={{position:'relative'}}>
             <Image

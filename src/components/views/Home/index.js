@@ -47,7 +47,7 @@ class Home extends Component {
 
       const newEventos = gridTwoColumns(this.props.Eventos.list)
 
-      console.log("NEW EVENTOS", newEventos)
+      //console.log("NEW EVENTOS", newEventos)
 
       this.setState({
         isLoading: false,
