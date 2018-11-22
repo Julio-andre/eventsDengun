@@ -19,7 +19,7 @@ class Home extends Component {
       isLoading:false,
       eventos:[],
       categories:['All','Startup','Software','Electronics','Conference','Social','Charity'],
-      categorySelected:"All"
+      categorieSelected:"All"
     }
 
     this.props.navigator.setOnNavigatorEvent((event)=>{
@@ -42,8 +42,8 @@ class Home extends Component {
     this.getEvents('All')
   }
 
-  getEvents = (category) => {
-    this.props.getEventos(category).then(()=>{
+  getEvents = (categories) => {
+    this.props.getEventos(categories).then(()=>{
 
       const newEventos = gridTwoColumns(this.props.Eventos.list)
 
